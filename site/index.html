@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Distributed-Slides — an MCP server that compiles talks into instrument-grade presentation software</title>
+<meta name="description" content="Distributed-Slides is an MCP server your agent uses to build animated, presenter-grade slide experiences: deterministic clock-driven motion, a private presenter desk, a synchronized audience window — compiled into one offline folder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="stage.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a1521'/><rect x='6' y='10' width='20' height='2' fill='%23d5ad66'/><rect x='6' y='16' width='14' height='2' fill='%2381a9ff'/><rect x='6' y='22' width='17' height='2' fill='%23f6f3eb'/></svg>">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead reveal">
+  <div class="wordmark">
+    <span class="wordmark-title">DISTRIBUTED&nbsp;SLIDES</span>
+    <span class="wordmark-sub">SLIDES.DISTRIBUTED.SYSTEMS</span>
+  </div>
+  <nav class="masthead-nav">
+    <a href="#contract">The contract</a>
+    <a href="#engines">Engines</a>
+    <a href="#desk">The desk</a>
+    <a href="#tools">Tools</a>
+    <a href="#install" class="nav-cta">Install</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-copy-col reveal">
+    <p class="kicker">AN MCP SERVER / RUNS LOCAL / ZERO DEPENDENCIES</p>
+    <h1>Slides that behave like <em>instruments</em>, not documents.</h1>
+    <p class="lede">Distributed-Slides is an MCP server your agent uses to compile a talk into presentation software: deterministic clock-driven animation, a private presenter desk with speaking notes, and a synchronized audience window — built as <strong>one offline folder</strong> that runs forever.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#install">Install the server</a>
+      <a class="button" href="#contract">Why it feels different</a>
+    </div>
+    <p class="hero-footnote">Extracted from the presentation system built for the HEAT research performance, September&nbsp;16, 2026.</p>
+  </div>
+
+  <div class="hero-stage-col reveal">
+    <div class="stage-shell">
+      <div class="stage-context"><span id="stage-chapter">LIVE DEMONSTRATION</span><span class="stage-live"><span class="live-dot"></span>RENDERED BY THE ENGINE, NOW</span></div>
+      <div class="stage" id="hero-stage-wrap"><div class="frame" id="hero-stage"></div></div>
+      <div class="stage-controls">
+        <button id="hero-play" aria-label="Play or pause">Pause</button>
+        <input id="hero-scrub" type="range" min="0" max="1000" value="0" aria-label="Scrub the scene clock">
+        <output id="hero-time">00:00 / 00:00</output>
+        <div class="stage-dots" id="hero-dots" role="tablist" aria-label="Demo scenes"></div>
+      </div>
+      <p class="stage-caption">This is not a video. The page loaded <code>engine.js</code> and mounted a scene. Drag the scrubber — every frame is a pure function of the clock.</p>
+    </div>
+    <aside class="cue-rail" aria-label="Presenter rail">
+      <p class="cue-heading">PRIVATE PRESENTER VIEW</p>
+      <div><p class="cue-label">SAY THIS TO TRANSITION</p>
+      <p class="cue-serif" id="hero-cue">Every animation is a pure function of the presenter clock.</p></div>
+      <div><p class="cue-label">WHAT TO SAY NOW</p>
+      <p class="cue-notes" id="hero-notes">The audience window mirrors this scene to the frame — and it never, ever shows these notes.</p></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 01 CONTRACT ============ -->
+<section class="band" id="contract">
+  <div class="band-rule reveal"><span class="band-number">01</span><span class="band-title">The contract</span><span class="band-hint">ONE DECISION, EVERYTHING FOLLOWS</span></div>
+  <div class="contract-grid">
+    <div class="contract-code reveal">
+      <pre><code><span class="c-comment">// every scene engine returns this</span>
+mount(stage, scene, deck)
+  -&gt; { <span class="c-key">update</span>(<span class="c-arg">seconds</span>, <span class="c-arg">motionEnabled</span>), count }</code></pre>
+      <p>Nothing accumulates between frames. A scene at <code>t = 8.2s</code> is identical every time you visit it — from the scrubber, from a replay, from the audience window, or after a browser crash mid-talk.</p>
+    </div>
+    <ol class="contract-payoffs">
+      <li class="reveal"><span class="payoff-n">→</span><strong>Scrubbing is exact.</strong> Drag to any instant of any scene. The frame you land on is the frame the audience would have seen.</li>
+      <li class="reveal"><span class="payoff-n">→</span><strong>The audience window is a mirror, not a guess.</strong> State syncs over <code>postMessage</code> with a per-session token. Notes stay on your side of the glass.</li>
+      <li class="reveal"><span class="payoff-n">→</span><strong>Reduced motion is the final frame.</strong> Motion off, <code>prefers-reduced-motion</code>, or a preview thumbnail — all render the scene's resolved end state, by construction.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 02 ENGINES ============ -->
+<section class="band" id="engines">
+  <div class="band-rule reveal"><span class="band-number">02</span><span class="band-title">Thirty scene engines</span><span class="band-hint">TWELVE ON DISPLAY, EVERY CARD A LIVE MOUNT — HOVER TO PLAY</span></div>
+  <div class="engine-grid" id="engine-grid"><!-- cards injected by site.js --></div>
+</section>
+
+<!-- ============ 03 DESK ============ -->
+<section class="band" id="desk">
+  <div class="band-rule reveal"><span class="band-number">03</span><span class="band-title">The presenter's desk</span><span class="band-hint">ACTUAL SCREENSHOTS FROM THE TEST SUITE</span></div>
+  <div class="desk-grid">
+    <figure class="desk-shot reveal">
+      <img src="assets/presenter.png" alt="Presenter view: scene viewport, scrubber, speaking notes, next-scene preview, rehearsal clock" loading="lazy">
+      <figcaption><span>PRESENTER</span> Notes, transition cues, a live next-scene preview, rehearsal clock, clicker hardening — one press is one scene, holding a button never races ahead.</figcaption>
+    </figure>
+    <figure class="desk-shot reveal">
+      <img src="assets/audience.png" alt="Audience window: full-bleed scene with no presenter chrome" loading="lazy">
+      <figcaption><span>AUDIENCE</span> Full-bleed, chrome-free, frame-locked to your desk. Missing data stays missing — a gap in the quotes is a gap on screen.</figcaption>
+    </figure>
+  </div>
+  <ul class="desk-list reveal">
+    <li>Named runs of show — switch between the 25-minute cut and the full route, live</li>
+    <li>Searchable scene index with live thumbnails</li>
+    <li>Blackout, share-screen mode, deep links to any scene</li>
+    <li>Learnable clicker mappings for any presenter remote</li>
+  </ul>
+</section>
+
+<!-- ============ 04 TOOLS ============ -->
+<section class="band" id="tools">
+  <div class="band-rule reveal"><span class="band-number">04</span><span class="band-title">Seventeen tools</span><span class="band-hint">WHAT YOUR AGENT SEES</span></div>
+  <div class="tool-ledger reveal" id="tool-ledger"><!-- rows injected by site.js --></div>
+</section>
+
+<!-- ============ 05 INSTALL ============ -->
+<section class="band" id="install">
+  <div class="band-rule reveal"><span class="band-number">05</span><span class="band-title">Run of show</span><span class="band-hint">FROM ZERO TO PERFORMANCE</span></div>
+  <div class="install-grid">
+    <div class="install-steps">
+      <div class="step reveal"><span class="step-n">01</span><div><strong>Install</strong><p>Register the server with your MCP client. Node 18+, no dependencies, nothing phones home.</p></div></div>
+      <div class="step reveal"><span class="step-n">02</span><div><strong>Author</strong><p><code>create_deck</code>, then <code>add_scene</code> — your agent reads <code>scene_reference</code> and writes scenes as JSON. Real datasets go in through <code>set_data</code>, not hardcoded into slides.</p></div></div>
+      <div class="step reveal"><span class="step-n">03</span><div><strong>Perform</strong><p><code>build_deck</code> emits one offline folder. Open <code>index.html</code>, press <kbd>P</kbd>, and share only the audience window.</p></div></div>
+    </div>
+    <div class="install-code reveal">
+      <div class="code-block">
+        <div class="code-block-bar"><span>claude</span><button class="copy" data-copy="claude mcp add distributed-slides -- node /path/to/distributed-slides/src/server.mjs">Copy</button></div>
+        <pre><code>claude mcp add distributed-slides -- \
+  node /path/to/distributed-slides/src/server.mjs</code></pre>
+      </div>
+      <div class="code-block">
+        <div class="code-block-bar"><span>.mcp.json</span><button class="copy" data-copy='{"mcpServers":{"distributed-slides":{"command":"node","args":["/path/to/distributed-slides/src/server.mjs"]}}}'>Copy</button></div>
+        <pre><code>{
+  "mcpServers": {
+    "distributed-slides": {
+      "command": "node",
+      "args": ["/path/to/distributed-slides/src/server.mjs"]
+    }
+  }
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="colophon-rule"></div>
+  <div class="colophon-grid">
+    <div>
+      <p class="wordmark-title small">DISTRIBUTED&nbsp;SLIDES</p>
+      <p class="colophon-line">A Distributed Systems, Inc. instrument.</p>
+    </div>
+    <p class="colophon-provenance">The engine on this page is the engine in the product. First performed as the HEAT research preview, Data&nbsp;Engineers&nbsp;DC, September&nbsp;16,&nbsp;2026 — 76 scenes, one folder, no network.</p>
+    <p class="colophon-mono">OUTPUT IS A FOLDER<br>DECKS ARE SPECS<br>PERFORMANCES ARE COMPILED</p>
+  </div>
+</footer>
+
+<script src="engine.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

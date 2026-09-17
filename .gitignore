@@ -1,0 +1,7 @@
+node_modules/
+decks/*/dist/
+decks/*/preview.json
+decks/*/assets/*
+!decks/*/assets/.gitkeep
+test/*.png
+.DS_Store
