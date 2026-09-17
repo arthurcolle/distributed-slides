@@ -298,6 +298,8 @@ const TOOLS = [
   ['update_deck', 'Patch deck-level fields.'],
   ['list_decks', 'Every deck, with scene counts and routes.'],
   ['delete_deck', 'Remove a deck entirely.'],
+  ['export_pdf', 'One storyboard PDF, every scene frozen at its final frame.', 1],
+  ['export_gifs', 'A GIF per scene plus a zero-JS gallery — a copy for humans.', 1],
 ];
 function toolLedger() {
   const host = $('#tool-ledger');

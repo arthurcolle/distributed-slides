@@ -26,7 +26,7 @@ function palette(scene, deck) {
   base.fontMono = theme.fontMono || 'Menlo,monospace';
   return base;
 }
-const node = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
+const node = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
 
 /* ---------- SVG scene scaffold: chrome + primitive kit shared by diagram/chart/custom ---------- */
 function svgScene(host, s, deck) {

@@ -1,15 +1,13 @@
 // Browser verification: serve the built demo deck, click through every scene,
-// scrub, blackout, open the audience window and confirm sync. Requires the
-// shared playwright install (PLAYWRIGHT_DIR env overrides the default path).
+// scrub, blackout, open the audience window and confirm sync. Needs Playwright
+// (see src/gif-kit.mjs's install hint) — PLAYWRIGHT_DIR/CHROME_PATH override it.
 import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { createRequire } from 'node:module';
+import { loadPlaywright, launchChromium } from '../src/gif-kit.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const PW_DIR = process.env.PLAYWRIGHT_DIR || '/Users/arthurcolle/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
-const require = createRequire(path.join(PW_DIR, 'x.js'));
-const { chromium } = require('playwright');
+const { chromium } = loadPlaywright();
 
 const dist = path.join(ROOT, 'decks/demo-flagship/dist');
 const port = 4917;
@@ -18,7 +16,7 @@ await new Promise(r => setTimeout(r, 600));
 
 const assert = (cond, msg) => { if (!cond) throw new Error('ASSERT: ' + msg); };
 const failures = [];
-const browser = await chromium.launch({ executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true });
+const browser = await launchChromium(chromium);
 try {
   const page = await browser.newPage({ viewport: { width: 1500, height: 950 } });
   const errors = [];

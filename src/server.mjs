@@ -211,7 +211,7 @@ const tools = {
     },
   },
   build_deck: {
-    description: 'Compile the deck into a self-contained offline app (dist/index.html + runtime + assets). Open index.html directly or use preview_deck.',
+    description: 'Compile the deck into a self-contained offline app (dist/index.html + runtime + assets), plus dist/print.html — a static storyboard any browser can Print > Save as PDF with no further tooling. Open index.html directly or use preview_deck. For automated GIF/PDF exports, see export_gifs and export_pdf.',
     schema: { type: 'object', properties: { deck: { type: 'string' } }, required: ['deck'] },
     run: a => {
       const deck = store.loadDeck(a.deck);
@@ -242,6 +242,42 @@ const tools = {
     description: 'Stop the background preview server for a deck.',
     schema: { type: 'object', properties: { deck: { type: 'string' } }, required: ['deck'] },
     run: a => ({ stopped: stopPreview(a.deck) }),
+  },
+  export_gifs: {
+    description: 'Render every scene in a route to an animated GIF (scrubbed from its own deterministic clock) and assemble a zero-JS static gallery at dist/gifs/index.html — a "copy of the deck" a human can flip through with no server and no engine. Requires Playwright and ffmpeg (see the error message for install steps if missing).',
+    schema: {
+      type: 'object',
+      properties: {
+        deck: { type: 'string' },
+        route: { type: 'string', description: 'Route to export (default: the deck default route).' },
+        scenes: { type: 'array', items: { type: 'string' }, description: 'Export only these scene ids instead of a whole route.' },
+        fps: { type: 'number', description: 'Frames per second (default 8).' },
+        width: { type: 'number', description: 'GIF width in pixels (default 480).' },
+        maxSeconds: { type: 'number', description: 'Cap each GIF loop to this many seconds of the scene clock (default 9) to keep file sizes sane.' },
+      },
+      required: ['deck'],
+    },
+    run: async a => {
+      const { exportGifs } = await import('./export-gifs.mjs');
+      const r = await exportGifs(a.deck, a);
+      return { dir: r.dir, indexFile: r.indexFile, gifCount: r.count, totalMB: Math.round(r.totalBytes / 1024 / 1024 * 10) / 10, warnings: r.warnings };
+    },
+  },
+  export_pdf: {
+    description: 'Render the whole deck to a single storyboard PDF: every scene frozen at its resolved reduced-motion frame, one page each. This automates what a human can also do by hand — every build already emits dist/print.html, which opens in any browser and prints/saves to PDF with no tooling at all. Requires Playwright only (no ffmpeg).',
+    schema: {
+      type: 'object',
+      properties: {
+        deck: { type: 'string' },
+        notes: { type: 'boolean', description: 'Include speaking notes on each page (default false — a shareable copy is audience-safe by default).' },
+      },
+      required: ['deck'],
+    },
+    run: async a => {
+      const { exportPdf } = await import('./export-pdf.mjs');
+      const r = await exportPdf(a.deck, a);
+      return { file: r.file, pages: r.pages, mb: Math.round(r.bytes / 1024 / 1024 * 10) / 10 };
+    },
   },
 };
 
@@ -280,12 +316,14 @@ function handle(msg) {
     if (method === 'tools/call') {
       const tool = tools[params.name];
       if (!tool) return fail(-32602, `Unknown tool ${params.name}`);
-      try {
-        const result = tool.run(params.arguments || {});
-        return reply({ content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] });
-      } catch (e) {
-        return reply({ content: [{ type: 'text', text: 'Error: ' + e.message }], isError: true });
-      }
+      // Tools may be sync or async; dispatch uniformly and reply whenever they
+      // settle. Requests are not required to resolve in order over stdio —
+      // each reply carries its own id.
+      Promise.resolve().then(() => tool.run(params.arguments || {})).then(
+        result => reply({ content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] }),
+        e => reply({ content: [{ type: 'text', text: 'Error: ' + e.message }], isError: true }),
+      );
+      return;
     }
     if (method && method.startsWith('notifications/')) return;
     if (id !== undefined) fail(-32601, `Method not found: ${method}`);

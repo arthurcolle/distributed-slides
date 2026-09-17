@@ -40,6 +40,7 @@ try {
   assert(init.serverInfo.name === 'distributed-slides', 'serverInfo');
   const { tools } = await rpc('tools/list');
   assert(tools.length >= 15, 'tool count, got ' + tools.length);
+  for (const name of ['export_gifs', 'export_pdf']) assert(tools.some(t => t.name === name), name + ' tool registered');
 
   // Clean slate.
   try { await call('delete_deck', { deck: DECK }); } catch {}
@@ -439,6 +440,8 @@ onUpdate((t, on) => {
   }
   const content = fs.readFileSync(path.join(built.dist, 'content.js'), 'utf8');
   assert(content.includes('custom-lanes') && content.includes('window.DECK='), 'content.js embeds scenes');
+  assert(fs.existsSync(built.printEntry) && built.printEntry.endsWith('print.html'), 'build_deck emits print.html');
+  assert(fs.readFileSync(built.printEntry, 'utf8').includes('page-break-after'), 'print.html paginates scenes');
 
   // Negative paths.
   let rejected = false;

@@ -94,6 +94,24 @@ Call the `scene_reference` tool for the full field-level spec of every type.
 `add_scene` `update_scene` `remove_scene` `move_scene` — scenes, validated on entry (custom code is parse-checked before it is accepted).
 `set_route` `set_data` `add_asset` — runs of show, real datasets (put observations in `deck.data`, not hardcoded into slides), art and film assets.
 `validate_deck` `build_deck` `preview_deck` `stop_preview` `scene_reference` — checks, compilation, background preview server, self-documentation.
+`export_gifs` `export_pdf` — a copy of the deck for people without this app (see below).
+
+## Getting a copy of the deck to a human
+
+The interactive app is for presenting. Sometimes someone just wants to *see* it. Every `build_deck` also emits **`dist/print.html`** for free: a static storyboard — every scene frozen at its resolved reduced-motion frame, one per page. Open it in any browser and use Print → Save as PDF. No MCP tool, no Playwright, nothing to install.
+
+For hands-free automation, two tools wrap that:
+
+- **`export_pdf`** drives `print.html` headlessly and writes `dist/storyboard.pdf` — one multi-page PDF, the whole deck. Needs Playwright only.
+- **`export_gifs`** scrubs each scene's own clock (same mechanism as the README GIFs above) and writes `dist/gifs/<scene-id>.gif` plus a zero-JS `dist/gifs/index.html` gallery — an animated copy that needs no server and no engine. Needs Playwright *and* ffmpeg. Defaults to 8fps/480px/9s-per-loop to keep file sizes sane; override with `fps`, `width`, `maxSeconds`, or export just a `route` / specific `scenes`.
+
+```sh
+npm install -D playwright && npx playwright install chromium   # once
+npm run export-pdf -- demo-flagship
+npm run export-gifs -- demo-flagship --fps=8 --width=480
+```
+
+Both auto-detect a usable headless browser: an explicit `CHROME_PATH`, then an installed system Chrome (via Playwright's `channel:"chrome"` — no hardcoded paths), then Playwright's own managed download.
 
 ## Testing
 
