@@ -10,7 +10,7 @@ npm run investor
 # Audience:  http://127.0.0.1:4621/?audience=1
 npm run test:investor
 npm run export-pdf -- distributed-investor
-npm run export-gifs -- distributed-investor --scenes=shared-stack,authority,durable-organization
+npm run export-gifs -- distributed-investor --route=technical
 ```
 
 The generated `dist/` folder is portable and offline. `index.html` provides the presenter desk and synchronized audience window. `print.html` is the notes-free static storyboard. The scene index provides a full investor route, a short introduction and a technical-evidence route.
