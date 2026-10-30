@@ -31,7 +31,7 @@ const viewerCss = `<style>
 </style>`;
 const viewer = `<nav class="viewer-nav" aria-label="Presentation controls"><button id="viewer-prev" aria-label="Previous slide">← Previous</button><span id="viewer-count" aria-live="polite"></span><button id="viewer-replay" aria-label="Replay animation">Replay</button><button id="viewer-next" aria-label="Next slide">Next →</button></nav><script>(()=>{const p=document.querySelector('#viewer-prev'),n=document.querySelector('#viewer-next'),c=document.querySelector('#viewer-count');function u(){const s=window.DS_TEST.getState();c.textContent=(s.index+1)+' / '+s.routeLength;p.disabled=s.index===0;n.disabled=s.index===s.routeLength-1}p.onclick=()=>{window.DS_TEST.navigate(-1);u()};n.onclick=()=>{window.DS_TEST.navigate(1);u()};document.querySelector('#viewer-replay').onclick=()=>document.querySelector('#restart').click();setInterval(u,250);u()})();</script>`;
 let html = fs.readFileSync(index, 'utf8');
-html = html.replace('</head>', `${viewerCss}</head>`)
+html = html.replace('</head>', `<base href="/deck/">${viewerCss}</head>`)
   .replace('<body>', `<body><script>const deckUrl=new URL(location.href);deckUrl.searchParams.set('audience','1');history.replaceState(null,'',deckUrl);</script>`)
   .replace('</body>', `${viewer}</body>`);
 fs.writeFileSync(index, html);
