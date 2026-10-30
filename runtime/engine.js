@@ -742,8 +742,14 @@ function elements(stage, s, deck) {
   const nodesInOrder = s.elements.filter(x => x.text && x.fill !== 'transparent');
   const records = [];
   s.elements.forEach((e, index) => {
-    const host = node('div', 'native-object');
+    const host = node(e.href ? 'a' : 'div', 'native-object');
     host.dataset.object = index;
+    if (e.href) {
+      host.href = e.href;
+      host.target = '_blank';
+      host.rel = 'noopener noreferrer';
+      host.title = e.linkLabel || e.href;
+    }
     if (e.kind === 'connector' || e.geometry === 'line') {
       const svg = document.createElementNS(NS, 'svg'), path = document.createElementNS(NS, 'path');
       svg.setAttribute('viewBox', '0 0 1280 720');

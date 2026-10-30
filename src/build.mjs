@@ -30,6 +30,7 @@ function printHtml(deck) {
 <link rel="stylesheet" href="stage.css">
 <style>
 *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;color-adjust:exact}
+@page{size:1600px 900px;margin:0}
 html,body{margin:0;background:#333}
 .page{width:1600px;height:900px;position:relative;overflow:hidden;background:#0a1521;page-break-after:always;break-after:page;margin:0 auto 18px}
 .page:last-child{page-break-after:avoid;break-after:avoid;margin-bottom:0}

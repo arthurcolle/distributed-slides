@@ -594,8 +594,8 @@
       "chapter": "System",
       "duration": 16,
       "title": "Authority is separate from model judgment",
-      "notes": "Read-only repository inspection October 30 2026. dsco-cli checkout 3a06e14, dated Oct25, with local modifications. README.md, src/tools.c, src/agent.c: tools_execute_for_tier governance/capability admission; tool/worker execution; Chronicle receipts and uncertain-effect inspection. No tests or external calls performed during this inspection.",
-      "source": "Read-only repository inspection October 30 2026. dsco-cli checkout 3a06e14, dated Oct25, with local modifications. README.md, src/tools.c, src/agent.c: tools_execute_for_tier governance/capability admission; tool/worker execution; Chronicle receipts and uncertain-effect inspection. No tests or external calls performed during this inspection.",
+      "notes": "DSCO implementation evidence: governed capability admission, tool and worker execution, and Chronicle receipts. Public source: https://github.com/arthurcolle/dsco. Status: implemented component behavior; this animation is explanatory, not a live action log.",
+      "source": "DSCO source and implementation evidence: https://github.com/arthurcolle/dsco",
       "cue": "Authority is separate from model judgment",
       "background": "#F5F3EE",
       "mode": "svg",
@@ -623,8 +623,8 @@
       "chapter": "System",
       "duration": 12,
       "title": "A shared action layer across services",
-      "notes": "Sources: dsco-autobot/ToolManagement/README.md and SYSTEM_SUMMARY.md, checkout ef61b0a Oct8 with local modifications, read-only inspection Oct30. Current website https://distributed.systems/ . Do not add transcript tool-count or performance claims without current measurement.",
-      "source": "Sources: dsco-autobot/ToolManagement/README.md and SYSTEM_SUMMARY.md, checkout ef61b0a Oct8 with local modifications, read-only inspection Oct30. Current website https://distributed.systems/ . Do not add transcript tool-count or performance claims without current measurement.",
+      "notes": "Tool Management implementation evidence: typed registry, discovery, execution, MCP, composition and service adapters. Public service: https://tools.distributed.systems. Status: implemented component surface; no throughput or tool-count claim is made here.",
+      "source": "Tool Management service: https://tools.distributed.systems",
       "cue": "A shared action layer across services",
       "background": "#F5F3EE",
       "elements": [
@@ -897,8 +897,8 @@
       "chapter": "System",
       "duration": 12,
       "title": "Intelligence and organizational memory",
-      "notes": "Sources: dsco-router/README.md; docs/chimera-qwen38-training.md (scoped 80-row held-out evaluation, not production proof). GraphSub README.md/BENCHMARKS.md, checkout52ade08 Sept3 modified locally. LINGO.md supports observations, tasks, scenarios, receipts and reopenable GraphSub world artifacts. Current website https://distributed.systems/ .",
-      "source": "Sources: dsco-router/README.md; docs/chimera-qwen38-training.md (scoped 80-row held-out evaluation, not production proof). GraphSub README.md/BENCHMARKS.md, checkout52ade08 Sept3 modified locally. LINGO.md supports observations, tasks, scenarios, receipts and reopenable GraphSub world artifacts. Current website https://distributed.systems/ .",
+      "notes": "Router/Chimera: bounded model dispatch, provider lanes and metering. GraphSub: connected state, persistence and query primitives. Public links: https://router.distributed.systems and https://github.com/arthurcolle/graphsub. Status: scoped component evidence, not a production-scale guarantee.",
+      "source": "Router: https://router.distributed.systems · GraphSub: https://github.com/arthurcolle/graphsub",
       "cue": "Intelligence and organizational memory",
       "background": "#F5F3EE",
       "elements": [
@@ -1741,8 +1741,8 @@
       "chapter": "Business",
       "duration": 12,
       "title": "An operating foundation",
-      "notes": "Revenue source: founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:57-01:03, supplied transcript. Not audited or independently verified in this review. Products confirmed via Oct30 read-only local code review, not fresh end-to-end tests. No other customer count, growth or recurring revenue claim.",
-      "source": "Revenue source: founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:57-01:03, supplied transcript. Not audited or independently verified in this review. Products confirmed via Oct30 read-only local code review, not fresh end-to-end tests. No other customer count, growth or recurring revenue claim.",
+      "notes": "Founder-reported services revenue from one client, not ARR. Product links and implementation status are listed in the evidence appendix. No additional customer-count, growth or recurring-revenue claim is made.",
+      "source": "Founder-reported commercial evidence; not independently audited.",
       "cue": "An operating foundation",
       "background": "#101B27",
       "elements": [
@@ -3227,8 +3227,8 @@
       "chapter": "Raise and evidence",
       "duration": 12,
       "title": "Evidence and current readiness",
-      "notes": "Read-only review: dsco-cli3a06e14 Oct25, dsco-autobotef61b0a Oct8, GraphSub52ade08 Sept3, HEAT81c8b62 Oct17. All current checkouts had local modifications. Source files: CLI README/src/tools.c/src/agent.c; ToolManagement README/SYSTEM_SUMMARY; Router README/chimera-qwen38-training; GraphSub README/BENCHMARKS; HEAT docs/CURRENT_RUNTIME. HEAT order-placement schedules paused. OrgCompiler SYSTEM-STATUS production admission incomplete. Revenue is founder-reported services revenue, not ARR. Mainline pending, not closed.",
-      "source": "Read-only review: dsco-cli3a06e14 Oct25, dsco-autobotef61b0a Oct8, GraphSub52ade08 Sept3, HEAT81c8b62 Oct17. All current checkouts had local modifications. Source files: CLI README/src/tools.c/src/agent.c; ToolManagement README/SYSTEM_SUMMARY; Router README/chimera-qwen38-training; GraphSub README/BENCHMARKS; HEAT docs/CURRENT_RUNTIME. HEAT order-placement schedules paused. OrgCompiler SYSTEM-STATUS production admission incomplete. Revenue is founder-reported services revenue, not ARR. Mainline pending, not closed.",
+      "notes": "Current status: core components are implemented; HEAT order placement is paused; the organization compiler remains incomplete; founder-reported services revenue is not ARR; and Mainline remains in process. Public operating assets are linked on this page.",
+      "source": "DSCO https://github.com/arthurcolle/dsco · Tools https://tools.distributed.systems · Router https://router.distributed.systems · GraphSub https://github.com/arthurcolle/graphsub · HEAT https://heat-mcp.distributed.systems/mcp",
       "cue": "Evidence and current readiness",
       "background": "#F5F3EE",
       "elements": [
@@ -3280,57 +3280,6 @@
           "enter": {
             "mode": "rise",
             "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "heat-curve",
-          "name": "heat-curve",
-          "x": 760,
-          "y": 120,
-          "w": 420,
-          "h": 236,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "src": "assets/heat-heating-curve.png",
-          "alt": "HEAT historical heating curve research chart",
-          "enter": {
-            "mode": "fade",
-            "delay": 0.45,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "heat-chart-caption",
-          "name": "heat-chart-caption",
-          "x": 760,
-          "y": 365,
-          "w": 420,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Historical heating-curve research artifact. Not performance or returns evidence.",
-              "size": 13,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.6,
             "duration": 0.7
           }
         },
@@ -3437,7 +3386,7 @@
           ],
           "text": [
             {
-              "text": "Code inspection",
+            "text": "DSCO source ↗",
               "size": 21,
               "color": "#14202C",
               "bold": false,
@@ -3448,7 +3397,9 @@
             "mode": "rise",
             "delay": 0.8,
             "duration": 0.7
-          }
+        },
+        "href": "https://github.com/arthurcolle/dsco",
+        "linkLabel": "DSCO source repository"
         },
         {
           "id": "e6",
@@ -3524,7 +3475,7 @@
           ],
           "text": [
             {
-              "text": "Code / docs",
+            "text": "Tools service ↗",
               "size": 21,
               "color": "#14202C",
               "bold": false,
@@ -3535,7 +3486,9 @@
             "mode": "rise",
             "delay": 1.28,
             "duration": 0.7
-          }
+        },
+        "href": "https://tools.distributed.systems",
+        "linkLabel": "Tool Management service"
         },
         {
           "id": "e9",
@@ -3611,7 +3564,7 @@
           ],
           "text": [
             {
-              "text": "Component evidence",
+            "text": "Router service ↗",
               "size": 21,
               "color": "#14202C",
               "bold": false,
@@ -3622,7 +3575,9 @@
             "mode": "rise",
             "delay": 1.76,
             "duration": 0.7
-          }
+        },
+        "href": "https://router.distributed.systems",
+        "linkLabel": "Router service"
         },
         {
           "id": "e12",
@@ -3698,7 +3653,7 @@
           ],
           "text": [
             {
-              "text": "Code / dated benchmarks",
+            "text": "GraphSub source ↗",
               "size": 21,
               "color": "#14202C",
               "bold": false,
@@ -3709,7 +3664,9 @@
             "mode": "rise",
             "delay": 2.24,
             "duration": 0.7
-          }
+        },
+        "href": "https://github.com/arthurcolle/graphsub",
+        "linkLabel": "GraphSub source repository"
         },
         {
           "id": "e15",
@@ -3785,7 +3742,7 @@
           ],
           "text": [
             {
-              "text": "Runtime documentation",
+            "text": "HEAT MCP ↗",
               "size": 21,
               "color": "#14202C",
               "bold": false,
@@ -3796,7 +3753,9 @@
             "mode": "rise",
             "delay": 2.4,
             "duration": 0.7
-          }
+        },
+        "href": "https://heat-mcp.distributed.systems/mcp",
+        "linkLabel": "HEAT authenticated MCP endpoint"
         },
         {
           "id": "e18",

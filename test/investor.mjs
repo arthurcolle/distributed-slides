@@ -29,7 +29,14 @@ try{
  }
  // Same time yields same picture, including reverse seeking.
  await page.evaluate(()=>window.DS_TEST.goTo('shared-stack'));
- const snap=async t=>{await page.evaluate(t=>window.DS_TEST.seek(t),t);return await page.locator('#viewport').screenshot();};
+ const snap=async t=>{
+  await page.evaluate(async t=>{
+   if(window.DS_TEST.getState().playing) document.querySelector('#play').click();
+   window.DS_TEST.seek(t);
+   await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  },t);
+  return await page.locator('#viewport').screenshot();
+ };
  const a=await snap(8),b=await snap(1),a2=await snap(8);
  assert(a.equals(a2),'custom scene scrubs deterministically');assert(!a.equals(b),'scene visibly animates');
  await page.keyboard.press('l');assert(await page.locator('#scene-dialog').evaluate(e=>e.open));
