@@ -21,6 +21,9 @@ for (const scene of publicDeck.scenes) {
   scene.source = publicSources[scene.id] || 'Distributed Systems — current product and implementation status.';
   delete scene.cue;
   delete scene.deliveryCue;
+  // Investor viewing is self-guided: essential content must be readable on the
+  // first frame. Keep diagram connectors animated, but never stage body copy.
+  for (const element of scene.elements || []) delete element.enter;
 }
 const built = buildDeck(publicDeck);
 const index = path.join(built.dist, 'index.html');
