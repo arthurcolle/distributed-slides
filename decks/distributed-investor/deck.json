@@ -184,7 +184,7 @@
       "deliveryCue": "Make the gap concrete in business terms: responsibility, persistence, and accountability.",
       "mode": "svg",
       "subtitle": "The operating layer that turns intelligent work into an accountable organization.",
-      "code": "const {box,flow,text,C}=api;\ntext('Four operating assets. One shared substrate.',120,292,900,36,C.gold,undefined,false,700);\nbox(175,390,300,132,'DSCO CLI','Governed work execution','gold');\nbox(535,390,300,132,'Autobot / TMA','Capabilities and workflows','blue');\nbox(895,390,300,132,'Chimera / Router','Model dispatch and accounting','gold');\nbox(1255,390,300,132,'GraphSub','Persistent connected state','green');\nflow([[475,456],[535,456]],1.2,C.blue);\nflow([[835,456],[895,456]],2,C.gold);\nflow([[1195,456],[1255,456]],2.8,C.green);\ntext('Reusable operating assets for accountable autonomous work.',175,610,1180,30,C.muted);",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ntext('Four operating assets. One shared substrate.',120,292,900,36,C.gold,undefined,false,700);\ncard(175,390,300,132,'DSCO CLI','Governed work execution','gold');\ncard(535,390,300,132,'Autobot / TMA','Capabilities and workflows','blue');\ncard(895,390,300,132,'Chimera / Router','Model dispatch and accounting','gold');\ncard(1255,390,300,132,'GraphSub','Persistent connected state','green');\nflow([[475,456],[535,456]],1.2,C.blue);\nflow([[835,456],[895,456]],2,C.gold);\nflow([[1195,456],[1255,456]],2.8,C.green);\ntext('Reusable operating assets for accountable autonomous work.',175,610,1180,30,C.muted);",
       "phases": [],
       "footnote": "Architecture diagram. It describes component responsibilities, not live traffic or autonomous operation."
     },
@@ -200,7 +200,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "Architecture overview. Connections describe responsibilities, not live traffic.",
-      "code": "const {box,flow,text,C}=api;\nbox(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold');\nbox(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue');\nbox(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold');\nbox(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green');\nflow([[800,430],[800,480],[300,480],[300,530]],1.2,C.blue);\nflow([[800,430],[800,530]],2,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],2.8,C.green);",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ncard(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold');\ncard(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue');\ncard(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold');\ncard(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green');\nflow([[800,430],[800,480],[300,480],[300,530]],1.2,C.blue);\nflow([[800,430],[800,530]],2,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],2.8,C.green);",
       "phases": [
         {
           "title": "Execution",
@@ -440,7 +440,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "DSCO implementation: proposal, admission, execution and Chronicle receipts.",
-      "code": "const {box,flow,text,C}=api;\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{box(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue');if(i<3)flow([[420+i*390,457],[460+i*390,457]],1.2+i*.8,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted);",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{card(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue');if(i<3)flow([[420+i*390,457],[460+i*390,457]],1.2+i*.8,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted);",
       "phases": [
         {
           "title": "Suggestion",
@@ -1259,7 +1259,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "Prototype architecture: durable state across changing models and workers.",
-      "code": "const {box,flow,text,C}=api;\nbox(575,320,450,285,'Organization state','Mandates and authority\\nResources and commitments\\nOutcome memory','gold');\nbox(75,360,350,150,'Models','Interchangeable intelligence','blue');\nbox(1175,360,350,150,'Workers','Restartable execution','green');\nflow([[425,435],[575,435]],1.2,C.blue);flow([[1025,435],[1175,435]],2,C.green);\ntext('Organization Compiler projects a shared specification into runtime, router, graph and agent state.',120,680,1360,29,C.muted);",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ncard(575,320,450,285,'Organization state','Mandates and authority\\nResources and commitments\\nOutcome memory','gold');\ncard(75,360,350,150,'Models','Interchangeable intelligence','blue');\ncard(1175,360,350,150,'Workers','Restartable execution','green');\nflow([[425,435],[575,435]],1.2,C.blue);flow([[1025,435],[1175,435]],2,C.green);\ntext('Organization Compiler projects a shared specification into runtime, router, graph and agent state.',120,680,1360,29,C.muted);",
       "phases": [
         {
           "title": "Retained state",
