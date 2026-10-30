@@ -13,7 +13,10 @@
     "test:browser": "node test/browser.mjs",
     "gifs": "node scripts/capture-gifs.mjs",
     "export-gifs": "node src/export-gifs.mjs",
-    "export-pdf": "node src/export-pdf.mjs"
+    "export-pdf": "node src/export-pdf.mjs",
+    "investor": "node scripts/investor.mjs",
+    "build:public-investor": "node scripts/build-public-investor.mjs",
+    "test:investor": "node test/investor.mjs"
   },
   "engines": {
     "node": ">=18"

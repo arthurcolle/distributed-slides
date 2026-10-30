@@ -434,7 +434,11 @@ function animateRecords(records, s) {
       if (t === last && enabled === prevEnabled) return;
       last = t; prevEnabled = enabled;
       for (const r of records) {
-        const p = enabled ? ease((t - r.delay) / r.duration) : 1;
+        // Public investor viewing favors immediate legibility. This opt-in flag
+        // leaves connector motion intact while keeping all substantive scene
+        // objects fully visible from frame zero.
+        const staticReadable = s.staticReadability && r.mode !== 'connector';
+        const p = staticReadable ? 1 : (enabled ? ease((t - r.delay) / r.duration) : 1);
         r.el.style.opacity = String(r.mode === 'art' ? Math.min(1, .15 + p) : p);
         if (r.mode === 'art') { r.el.style.transform = enabled ? `scale(${1.035 - Math.min(t / 30, 1) * .035})` : 'none'; continue; }
         if (r.el._path) { r.el._path.style.strokeDashoffset = String(1 - p); r.el.style.transform = 'none'; continue; }
@@ -742,8 +746,14 @@ function elements(stage, s, deck) {
   const nodesInOrder = s.elements.filter(x => x.text && x.fill !== 'transparent');
   const records = [];
   s.elements.forEach((e, index) => {
-    const host = node('div', 'native-object');
+    const host = node(e.href ? 'a' : 'div', 'native-object');
     host.dataset.object = index;
+    if (e.href) {
+      host.href = e.href;
+      host.target = '_blank';
+      host.rel = 'noopener noreferrer';
+      host.title = e.linkLabel || e.href;
+    }
     if (e.kind === 'connector' || e.geometry === 'line') {
       const svg = document.createElementNS(NS, 'svg'), path = document.createElementNS(NS, 'path');
       svg.setAttribute('viewBox', '0 0 1280 720');
