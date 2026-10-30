@@ -56,6 +56,10 @@ or in `.mcp.json`:
 
 Then the workflow is: `create_deck` → read `scene_reference` → `add_scene` per scene → `set_route` → `build_deck` (or `preview_deck`). The build under `decks/<id>/dist/` is self-contained; open `index.html` from disk or any static host, forever, offline.
 
+## The investor example
+
+`npm run investor` builds the source-backed Distributed Systems investor presentation. Its 16 scenes include three custom deterministic architecture animations, full/short/technical routes and a notes-free print storyboard. See [`decks/distributed-investor/README.md`](decks/distributed-investor/README.md) for evidence boundaries and export commands.
+
 ## The example: weather trading
 
 `decks/demo-flagship/deck.json` is the committed example — a research-preview deck in the style of the HEAT weather-derivatives talk this engine was extracted from. Six Kalshi-style temperature buckets drawn as quote lanes in perspective, a phase-space trajectory of temperature × price × time, a ten-city matrix with independent local clocks, an order-lifecycle timeline, a settlement candle session, and the full catalog of every other engine. Missing quotes stay gaps on screen — the engine never interpolates over holes in the data.
