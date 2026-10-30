@@ -21,6 +21,7 @@ for (const scene of publicDeck.scenes) {
   scene.source = publicSources[scene.id] || 'Distributed Systems — current product and implementation status.';
   delete scene.cue;
   delete scene.deliveryCue;
+  if (scene.type === 'elements') scene.staticReadability = true;
   // Investor viewing is self-guided: essential content must be readable on the
   // first frame. Keep diagram connectors animated, but never stage body copy.
   for (const element of scene.elements || []) delete element.enter;
