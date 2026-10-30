@@ -23,7 +23,7 @@ Three bespoke SVG scenes progressively assemble the architecture, illustrate adm
 
 - Sources live in each scene's `source` and presenter `notes` fields.
 - Public product descriptions: https://distributed.systems/
-- Founder pitch: https://www.youtube.com/watch?v=YUNJ2eLQWhw
+- Founder video links: https://www.youtube.com/watch?v=YUNJ2eLQWhw · https://www.youtube.com/watch?v=qFJYxZnNPhM&t=811s · https://www.youtube.com/watch?v=P45b2Fd7kC4&t=1s · https://www.youtube.com/watch?v=bj933QQfI3k
 - An October 30, 2026 read-only review inspected DSCO CLI, Tool Management, Router, GraphSub and HEAT source/runtime documentation. It did not execute fresh production integration tests.
 - Revenue is founder-reported services revenue from one client, not independently verified financials or ARR.
 - Financing is a proposed ask. Approximate allocations are arithmetic implications, not a costed budget or money raised.

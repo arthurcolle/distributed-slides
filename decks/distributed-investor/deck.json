@@ -200,7 +200,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "Architecture overview. Connections describe responsibilities, not live traffic.",
-      "code": "const {box,flow,text,C,svg}=api;\nbox(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold',0);\nbox(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue',2);\nbox(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold',4);\nbox(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green',6);\nflow([[800,430],[800,480],[300,480],[300,530]],2,C.blue);\nflow([[800,430],[800,530]],4,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],6,C.green);",
+      "code": "const {box,flow,text,C}=api;\nbox(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold');\nbox(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue');\nbox(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold');\nbox(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green');\nflow([[800,430],[800,480],[300,480],[300,530]],1.2,C.blue);\nflow([[800,430],[800,530]],2,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],2.8,C.green);",
       "phases": [
         {
           "title": "Execution",
@@ -440,7 +440,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "DSCO implementation: proposal, admission, execution and Chronicle receipts.",
-      "code": "const {box,flow,text,C,group}=api;\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{box(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue',i*2);if(i<3)flow([[420+i*390,457],[460+i*390,457]],i*2+1,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted,group(7));",
+      "code": "const {box,flow,text,C}=api;\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{box(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue');if(i<3)flow([[420+i*390,457],[460+i*390,457]],1.2+i*.8,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted);",
       "phases": [
         {
           "title": "Suggestion",
@@ -1259,7 +1259,7 @@
       "background": "#F5F3EE",
       "mode": "svg",
       "subtitle": "Prototype architecture: durable state across changing models and workers.",
-      "code": "const {box,flow,text,C,group}=api;\nbox(575,320,450,285,'Organization state','Mandates and authority\\nResources and commitments\\nOutcome memory','gold',0);\nbox(75,360,350,150,'Models','Interchangeable intelligence','blue',2);\nbox(1175,360,350,150,'Workers','Restartable execution','green',4);\nflow([[425,435],[575,435]],2,C.blue);flow([[1025,435],[1175,435]],4,C.green);\ntext('Organization Compiler projects a shared specification into runtime, router, graph and agent state.',120,680,1360,29,C.muted,group(6));",
+      "code": "const {box,flow,text,C}=api;\nbox(575,320,450,285,'Organization state','Mandates and authority\\nResources and commitments\\nOutcome memory','gold');\nbox(75,360,350,150,'Models','Interchangeable intelligence','blue');\nbox(1175,360,350,150,'Workers','Restartable execution','green');\nflow([[425,435],[575,435]],1.2,C.blue);flow([[1025,435],[1175,435]],2,C.green);\ntext('Organization Compiler projects a shared specification into runtime, router, graph and agent state.',120,680,1360,29,C.muted);",
       "phases": [
         {
           "title": "Retained state",
@@ -3699,7 +3699,131 @@
           "id": "e21",
           "name": "text-21",
           "x": 64,
-          "y": 654,
+          "y": 614,
+          "w": 250,
+          "h": 32,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "YC pitch ↗",
+              "size": 17,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 2.6,
+            "duration": 0.7
+          },
+          "href": "https://www.youtube.com/watch?v=YUNJ2eLQWhw",
+          "linkLabel": "Founder YC pitch on YouTube"
+        },
+        {
+          "id": "e22",
+          "name": "text-22",
+          "x": 330,
+          "y": 614,
+          "w": 250,
+          "h": 32,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Founder video 02 ↗",
+              "size": 17,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 2.6,
+            "duration": 0.7
+          },
+          "href": "https://www.youtube.com/watch?v=qFJYxZnNPhM&t=811s",
+          "linkLabel": "Founder video 02 on YouTube"
+        },
+        {
+          "id": "e23",
+          "name": "text-23",
+          "x": 630,
+          "y": 614,
+          "w": 250,
+          "h": 32,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Founder video 03 ↗",
+              "size": 17,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 2.6,
+            "duration": 0.7
+          },
+          "href": "https://www.youtube.com/watch?v=P45b2Fd7kC4&t=1s",
+          "linkLabel": "Founder video 03 on YouTube"
+        },
+        {
+          "id": "e24",
+          "name": "text-24",
+          "x": 930,
+          "y": 614,
+          "w": 250,
+          "h": 32,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Founder video 04 ↗",
+              "size": 17,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 2.6,
+            "duration": 0.7
+          },
+          "href": "https://www.youtube.com/watch?v=bj933QQfI3k",
+          "linkLabel": "Founder video 04 on YouTube"
+        },
+        {
+          "id": "e25",
+          "name": "text-25",
+          "x": 64,
+          "y": 666,
           "w": 1150,
           "h": 36,
           "anchor": "t",
