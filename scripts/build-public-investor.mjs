@@ -9,7 +9,9 @@ import { loadDeck } from '../src/store.mjs';
 const deck = loadDeck('distributed-investor');
 const publicDeck = JSON.parse(JSON.stringify(deck));
 const publicSources = {
-  founder: 'FragBench preprint: https://arxiv.org/abs/2605.11029',
+  founder: 'Founder history: https://www.efinancialcareers.com/news/2018/02/why-i-left-the-goldman-sachs-analyst-program-to-pursue-my-own-tech-idea',
+  'long-horizon': 'Public biography: https://www.nist.gov/people/ronald-colle',
+  'tools-models': 'Tools: https://tools.distributed.systems · Router: https://router.distributed.systems',
   knowledge: 'GraphSub source: https://github.com/arthurcolle/graphsub',
   backend: 'DSCO source: https://github.com/arthurcolle/dsco',
   harness: 'DSCO source: https://github.com/arthurcolle/dsco',

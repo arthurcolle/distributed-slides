@@ -1,6 +1,6 @@
 # Distributed Systems investor presentation
 
-A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Thirteen investor-story scenes preserve the autonomous AI organization and superintelligence infrastructure thesis, connecting enterprise, defense and intelligence customers to the shared stack, HEAT, owned compute and proposed financing. Four technical appendix scenes preserve the architecture and implementation evidence. The deck uses the existing deterministic animation runtime.
+A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Fourteen investor-story scenes preserve the autonomous AI organization and superintelligence infrastructure thesis, connecting early paid work and enterprise, defense and intelligence customers to the founder’s institutional/programmable-finance history, actual projects, HEAT, owned compute and proposed financing. Five appendix scenes preserve the architecture and implementation evidence. The deck uses the existing deterministic animation runtime.
 
 ## Run
 
@@ -36,3 +36,7 @@ Three bespoke SVG scenes progressively assemble the architecture, illustrate adm
 - No unsupported efficiency percentage, customer count, market size, GPU fleet, profitability or benchmark claim appears in this deck.
 
 This example does not publish itself or send investor email. Review the source and storyboard before external use.
+
+## Founder context revision
+
+The founder narrative connects institutional systems, programmable finance and independent computing to autonomous organizations. US/France and Ethereum/Urbit participation are direct founder statements; no investment returns are claimed. Ronald Collé’s public NIST biography supplies the family measurement context in an appendix, not company validation or institutional endorsement.
