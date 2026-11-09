@@ -1,6 +1,6 @@
 # Distributed Systems investor presentation
 
-A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Thirteen investor-story scenes connect the customer problem and paid deployment model to the actual DSCO execution surface, HEAT, the Office direction and proposed financing. Four technical appendix scenes preserve the architecture and implementation evidence. The deck uses the existing deterministic animation runtime.
+A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Thirteen investor-story scenes preserve the autonomous AI organization and superintelligence infrastructure thesis, connecting enterprise, defense and intelligence customers to the shared stack, HEAT, owned compute and proposed financing. Four technical appendix scenes preserve the architecture and implementation evidence. The deck uses the existing deterministic animation runtime.
 
 ## Run
 
@@ -28,7 +28,7 @@ Three bespoke SVG scenes progressively assemble the architecture, illustrate adm
 - Revenue is founder-reported services revenue from one client, not independently verified financials or ARR.
 - Financing is a proposed ask. Approximate allocations are arithmetic implications, not a costed budget or money raised.
 - HEAT is a research and operations application. Its documented order-placement schedules were paused at review. Autonomous live trading and investment returns are not claimed.
-- DSCO Office is founder-reported application forks with integration still in development.
+- Office and software interoperability support the backend; they do not replace the company’s autonomous AI organization thesis.
 - The GraphSub/SecDB analogy is a roadmap direction, not completed scenario and temporal integration.
 - FragBench is an arXiv preprint; it lists Arthur as coauthor but does not assign individual contributions.
 - The November 8 HEAT copilot is a local snapshot implementation, not live account monitoring.

@@ -1,6 +1,6 @@
 {
   "id": "distributed-investor",
-  "title": "Distributed Systems — One backend for autonomous organizations",
+  "title": "Distributed Systems — Autonomous AI Organizations",
   "brand": "DISTRIBUTED SYSTEMS",
   "brandTag": "INVESTOR PRESENTATION",
   "badge": "NOVEMBER 2026",
@@ -24,10 +24,10 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "One relationship with Distributed",
+      "title": "Infrastructure for autonomous AI organizations",
       "background": "#F5F3EE",
-      "notes": "The promise is our direction. Distributed provides the shared operating backend beneath apps and agents. We are building toward broad software access, not claiming universal integration today.",
-      "source": "Founder product direction, November 8 2026.",
+      "notes": "Thank you for taking the time. Distributed Systems is building infrastructure for autonomous AI organizations. Our claim is not that general intelligence is solved; our claim is that useful AI needs an operating layer around it: authority, tools, memory, records, and recovery. We have built the substrate, we have been paid to apply it, and we are now raising to make it repeatable.",
+      "source": "Founder vision, October 30 2026. Autonomous organizations are the company's goal, not a claim of achieved general intelligence. Product source: https://distributed.systems/ . Positioning preserved following founder correction November 9. Submitted Winter 2027 YC application screenshot: “AI infra for 1-person $1B companies & US intel”. This describes the ambition, not achieved company valuations or a government contract.",
       "staticReadability": true,
       "elements": [
         {
@@ -111,7 +111,7 @@
           ],
           "text": [
             {
-              "text": "One relationship\nwith Distributed.",
+              "text": "Autonomous AI\norganizations",
               "size": 82,
               "color": "#14202C",
               "bold": true,
@@ -135,8 +135,8 @@
           ],
           "text": [
             {
-              "text": "Access to the world’s software.",
-              "size": 42,
+              "text": "Building the next generation of superintelligence",
+              "size": 34,
               "color": "#986630",
               "bold": false,
               "lineHeight": 1.16
@@ -159,7 +159,7 @@
           ],
           "text": [
             {
-              "text": "The backend for people and autonomous organizations.\nArthur Collé, Founder",
+              "text": "Distributed Systems\nArthur Collé, Founder",
               "size": 25,
               "color": "#14202C",
               "bold": false,
@@ -174,9 +174,9 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "The work falls between the apps",
+      "title": "Intelligence needs an operating foundation",
       "background": "#101B27",
-      "notes": "",
+      "notes": "The company builds infrastructure for autonomous organizations and superintelligence. Software interoperability supports that ambition; it is not a repositioning into a connector marketplace.",
       "source": "Company problem thesis; not a quantified market-size claim.",
       "staticReadability": true,
       "elements": [
@@ -244,8 +244,8 @@
           ],
           "text": [
             {
-              "text": "Software is abundant.\nCoordination is still manual.",
-              "size": 63,
+              "text": "Intelligence is advancing.\nOrganizations need infrastructure.",
+              "size": 57,
               "color": "#F5F3EE",
               "bold": true,
               "lineHeight": 1.16
@@ -268,7 +268,7 @@
           ],
           "text": [
             {
-              "text": "People bridge accounts, permissions, disconnected data\nand unfinished workflows every day.",
+              "text": "A model can reason. An organization must carry work\nacross time, tools, people and machines.",
               "size": 35,
               "color": "#F5F3EE",
               "bold": false,
@@ -292,7 +292,7 @@
           ],
           "text": [
             {
-              "text": "An AI model can reason about the work.\nAn organization still needs somewhere to run it.",
+              "text": "Authority, execution and durable knowledge\nturn individual capabilities into an operating system.",
               "size": 33,
               "color": "#D9B78B",
               "bold": false,
@@ -307,9 +307,9 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "One backend for the organization",
+      "title": "A shared substrate for autonomous organizations",
       "background": "#F5F3EE",
-      "notes": "The backend is the commercial relationship. Apps are interfaces and capabilities on it. This is more than a connector catalog: state and execution survive individual requests.",
+      "notes": "The backend is the commercial relationship. Apps are interfaces and capabilities on it. This is more than a connector catalog: state and execution survive individual requests. The submitted YC direction spans one-person companies and institutional operations. Preserve this company thesis rather than leading with a software-access marketplace.",
       "source": "Existing DSCO, Tool Management, Router and GraphSub implementations; founder direction Nov 8.",
       "staticReadability": true,
       "elements": [
@@ -377,8 +377,8 @@
           ],
           "text": [
             {
-              "text": "One backend. Many applications.",
-              "size": 57,
+              "text": "The operating layer for AI organizations",
+              "size": 51,
               "color": "#14202C",
               "bold": true,
               "lineHeight": 1.16
@@ -401,7 +401,7 @@
           ],
           "text": [
             {
-              "text": "OFFICE     DOMAIN APPLICATIONS     AGENTS",
+              "text": "PEOPLE     AGENTS     APPLICATIONS",
               "size": 29,
               "color": "#986630",
               "bold": true,
@@ -425,8 +425,8 @@
           ],
           "text": [
             {
-              "text": "Distributed",
-              "size": 86,
+              "text": "Distributed Systems",
+              "size": 73,
               "color": "#14202C",
               "bold": true,
               "lineHeight": 1.16
@@ -449,7 +449,7 @@
           ],
           "text": [
             {
-              "text": "Shared state and permissions. Governed execution.\nModel routing and compute across the organization.",
+              "text": "Shared authority and memory. Coordinated execution.\nModels, software and compute under one operating layer.",
               "size": 32,
               "color": "#14202C",
               "bold": false,
@@ -473,7 +473,7 @@
           ],
           "text": [
             {
-              "text": "Native applications and service adapters. Broader integration is the product roadmap.",
+              "text": "Office and external software are capabilities on the backend. Autonomous organizations are the product direction.",
               "size": 15,
               "color": "#647482",
               "bold": false,
@@ -488,9 +488,9 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "A first customer buys a concrete outcome",
+      "title": "Enterprise, defense and intelligence",
       "background": "#F5F3EE",
-      "notes": "Sell a scoped operational outcome. The account is an organization adopting a backend, not a developer purchasing another SDK. Avoid invented customers, pipeline or prices.",
+      "notes": "Our initial customers are teams with expensive workflows that cross systems and require a clear record of who did what. We start with a bounded process, define acceptance, and earn the right to expand. Defense and intelligence are target markets because deployment ownership and controlled execution matter there, but we are not claiming a defense contract, accreditation, or existing pipeline.",
       "source": "Proposed go-to-market based on founder direction, not a claim of existing pipeline, government customers, certification or procurement access. Commercial approach: scoped paid engagements, consistent with https://distributed.systems/ .",
       "staticReadability": true,
       "elements": [
@@ -558,7 +558,7 @@
           ],
           "text": [
             {
-              "text": "A valuable workflow comes first",
+              "text": "Built for consequential operations",
               "size": 56,
               "color": "#14202C",
               "bold": true,
@@ -582,7 +582,7 @@
           ],
           "text": [
             {
-              "text": "INITIAL BUYER",
+              "text": "TARGET CUSTOMERS",
               "size": 18,
               "color": "#986630",
               "bold": true,
@@ -606,8 +606,8 @@
           ],
           "text": [
             {
-              "text": "Enterprise operations",
-              "size": 42,
+              "text": "Enterprise, defense and intelligence",
+              "size": 39,
               "color": "#14202C",
               "bold": true,
               "lineHeight": 1.16
@@ -630,7 +630,7 @@
           ],
           "text": [
             {
-              "text": "Example: reconcile an incoming service request with\naccount records, prepare the work and retain an audit trail.",
+              "text": "Organizations that need controlled execution, retained\ncontext and ownership of their operating infrastructure.",
               "size": 32,
               "color": "#14202C",
               "bold": false,
@@ -654,7 +654,7 @@
           ],
           "text": [
             {
-              "text": "Paid deployment with agreed acceptance criteria.\nExpand as more workflows use the same backend.",
+              "text": "Start with a funded, bounded deployment.\nProve the outcome, then expand the organization’s capabilities.",
               "size": 30,
               "color": "#986630",
               "bold": false,
@@ -678,7 +678,7 @@
           ],
           "text": [
             {
-              "text": "Illustrative target workflow. Defense and intelligence remain strategic opportunities, not claimed contracts.",
+              "text": "Target markets. No defense contract, accreditation or intelligence deployment is claimed.",
               "size": 15,
               "color": "#647482",
               "bold": false,
@@ -693,9 +693,9 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "Revenue follows customer deployment",
+      "title": "Build infrastructure through operating businesses",
       "background": "#101B27",
-      "notes": "Services paid for the first engineering. The next test is a repeatable backend product with measured costs, not unbounded bespoke consulting. Packaging and recurring rates remain to be validated.",
+      "notes": "The business model starts with scoped paid engagements. We enter through a workflow where the customer can define acceptance, permissions, and value. We then turn the repeated parts into operating infrastructure and, where there is a strong wedge, into a focused application or spin-out. The company website already offers six-month project engagements; future recurring economics are a plan, not contracted ARR.",
       "source": "Founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:57-01:11 and 02:01-02:31. Website offers scoped six-month project engagements. Future application/spinout economics are strategy, not contracted recurring revenue or completed spinouts.",
       "staticReadability": true,
       "elements": [
@@ -763,7 +763,7 @@
           ],
           "text": [
             {
-              "text": "Customer work becomes\nreusable infrastructure",
+              "text": "Build the infrastructure.\nBuild businesses on it.",
               "size": 61,
               "color": "#F5F3EE",
               "bold": true,
@@ -787,7 +787,7 @@
           ],
           "text": [
             {
-              "text": "01  Paid implementation",
+              "text": "01  Funded deployments",
               "size": 32,
               "color": "#D9B78B",
               "bold": true,
@@ -811,7 +811,7 @@
           ],
           "text": [
             {
-              "text": "Scope, integrate and validate one operational workflow.",
+              "text": "Customer work finances development and tests real needs.",
               "size": 27,
               "color": "#F5F3EE",
               "bold": false,
@@ -835,7 +835,7 @@
           ],
           "text": [
             {
-              "text": "02  Ongoing backend service",
+              "text": "02  Reusable infrastructure",
               "size": 32,
               "color": "#D9B78B",
               "bold": true,
@@ -859,7 +859,7 @@
           ],
           "text": [
             {
-              "text": "Charge for continued operation and expand with usage.",
+              "text": "Retain the shared runtime, tools, models and organizational state.",
               "size": 27,
               "color": "#F5F3EE",
               "bold": false,
@@ -883,7 +883,7 @@
           ],
           "text": [
             {
-              "text": "Applications create additional businesses on the same foundation.",
+              "text": "Develop application businesses on the same foundation.",
               "size": 26,
               "color": "#F5F3EE",
               "bold": false,
@@ -907,7 +907,7 @@
           ],
           "text": [
             {
-              "text": "Commercial plan. Current revenue is services revenue; recurring platform economics remain to be proven.",
+              "text": "Current revenue is services revenue. Platform and application economics remain to be validated.",
               "size": 15,
               "color": "#AFC5D9",
               "bold": false,
@@ -1543,23 +1543,23 @@
       "deliveryCue": "Be precise about what HEAT is and is not. Investors will hear “trading” and may over-infer."
     },
     {
-      "id": "office",
+      "id": "compute",
       "type": "elements",
       "chapter": "Investor story",
-      "duration": 10,
-      "title": "A native workspace on the same backend",
+      "duration": 12,
+      "title": "Owned compute is a strategic operating asset",
+      "notes": "The compute strategy is not a claim that we already have a large GPU fleet. We have evidence of owned workers completing dated deterministic CPU jobs. The proposed $6 million raise allocates roughly 80 percent—$4.8 million—to physical compute we intend to purchase and operate at Montrose Data Center, 401 Nina Place, Rockville, Maryland. The facility, power, cooling, network, equipment, and purchase terms still need diligence; we will release spend against measured workloads and utilization gates.",
+      "source": "Founder YC pitch 02:12-02:47 describes owned-hardware model research and compute-focused financing. fleet-mesh/CLUSTER.md documents nine owned workers completing dated deterministic CPU-job receipts. This is not inference throughput or a large GPU fleet claim. Utilization gates are proposed investment discipline, not historical metrics.",
+      "cue": "The founder and operating model are part of the diligence here, so let me make that explicit.",
       "background": "#F5F3EE",
-      "notes": "Office gives the shared backend a native surface. Do not confuse a collection of forks with a finished integrated suite.",
-      "source": "Founder report Nov 8, 2026; no suite-wide integration or production-readiness claim.",
-      "staticReadability": true,
       "elements": [
         {
-          "id": "label",
-          "name": "label",
+          "id": "e0",
+          "name": "text-0",
           "x": 64,
           "y": 32,
-          "w": 1000,
-          "h": 28,
+          "w": 850,
+          "h": 30,
           "anchor": "t",
           "insets": [
             0,
@@ -1570,20 +1570,25 @@
           "text": [
             {
               "text": "DISTRIBUTED SYSTEMS",
-              "size": 15,
+              "size": 16,
               "color": "#647482",
               "bold": true,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0,
+            "duration": 0.7
+          }
         },
         {
-          "id": "number",
-          "name": "number",
+          "id": "e1",
+          "name": "text-1",
           "x": 1160,
           "y": 32,
           "w": 60,
-          "h": 28,
+          "h": 30,
           "anchor": "t",
           "insets": [
             0,
@@ -1597,17 +1602,22 @@
               "size": 16,
               "color": "#647482",
               "bold": false,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0.16,
+            "duration": 0.7
+          }
         },
         {
-          "id": "headline",
-          "name": "headline",
+          "id": "e2",
+          "name": "title-main",
           "x": 64,
-          "y": 110,
-          "w": 1140,
-          "h": 155,
+          "y": 99,
+          "w": 1152,
+          "h": 130,
           "anchor": "t",
           "insets": [
             0,
@@ -1617,20 +1627,25 @@
           ],
           "text": [
             {
-              "text": "Office is an interface.\nDistributed is the foundation.",
-              "size": 61,
+              "text": "Owned compute supports the shared stack",
+              "size": 48,
               "color": "#14202C",
               "bold": true,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0.32,
+            "duration": 0.7
+          }
         },
         {
-          "id": "app",
-          "name": "app",
-          "x": 68,
-          "y": 320,
-          "w": 1100,
+          "id": "e3",
+          "name": "text-3",
+          "x": 64,
+          "y": 237,
+          "w": 1120,
           "h": 65,
           "anchor": "t",
           "insets": [
@@ -1641,20 +1656,25 @@
           ],
           "text": [
             {
-              "text": "Documents. Spreadsheets. Presentations.",
-              "size": 36,
+              "text": "Capital builds a reusable operating asset",
+              "size": 37,
               "color": "#986630",
               "bold": true,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0.48,
+            "duration": 0.7
+          }
         },
         {
-          "id": "body",
-          "name": "body",
-          "x": 68,
-          "y": 425,
-          "w": 1110,
+          "id": "e4",
+          "name": "text-4",
+          "x": 64,
+          "y": 329,
+          "w": 1120,
           "h": 100,
           "anchor": "t",
           "insets": [
@@ -1665,45 +1685,26 @@
           ],
           "text": [
             {
-              "text": "People and agents should work with the same objects,\npermissions and execution history across applications.",
+              "text": "Own the infrastructure for model research\nand controlled execution across our applications.",
               "size": 32,
               "color": "#14202C",
               "bold": false,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
-        },
-        {
-          "id": "road",
-          "name": "road",
-          "x": 68,
-          "y": 565,
-          "w": 1110,
-          "h": 75,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
           ],
-          "text": [
-            {
-              "text": "Application forks are the starting point.\nA shared operating environment is the product.",
-              "size": 27,
-              "color": "#986630",
-              "bold": false,
-              "lineHeight": 1.16
-            }
-          ]
+          "enter": {
+            "mode": "rise",
+            "delay": 0.64,
+            "duration": 0.7
+          }
         },
         {
-          "id": "foot",
-          "name": "foot",
+          "id": "e5",
+          "name": "text-5",
           "x": 64,
-          "y": 658,
-          "w": 1140,
-          "h": 40,
+          "y": 492,
+          "w": 530,
+          "h": 50,
           "anchor": "t",
           "insets": [
             0,
@@ -1713,15 +1714,137 @@
           ],
           "text": [
             {
-              "text": "DSCO Office: founder-reported GridCraft and related app forks. Unified suite integration is in development.",
+              "text": "Current evidence",
+              "size": 28,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0.8,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "e6",
+          "name": "text-6",
+          "x": 64,
+          "y": 550,
+          "w": 530,
+          "h": 80,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Owned workers have completed\ndated deterministic CPU jobs.",
+              "size": 25,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 0.96,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "e7",
+          "name": "text-7",
+          "x": 708,
+          "y": 492,
+          "w": 500,
+          "h": 50,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Next investment",
+              "size": 28,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 1.12,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "e8",
+          "name": "text-8",
+          "x": 708,
+          "y": 550,
+          "w": 500,
+          "h": 80,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Expand capacity against measured\nworkloads and utilization gates.",
+              "size": 25,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.18
+            }
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 1.28,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "e9",
+          "name": "text-9",
+          "x": 64,
+          "y": 654,
+          "w": 1150,
+          "h": 36,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Hardware expansion and model research are planned investments, not established production throughput.",
               "size": 15,
               "color": "#647482",
               "bold": false,
-              "lineHeight": 1.16
+              "lineHeight": 1.18
             }
-          ]
+          ],
+          "enter": {
+            "mode": "rise",
+            "delay": 1.44,
+            "duration": 0.7
+          }
         }
-      ]
+      ],
+      "deliveryCue": "Separate current evidence from the proposed purchase. Say the diligence sentence out loud."
     },
     {
       "id": "knowledge",
@@ -2271,9 +2394,9 @@
       "type": "elements",
       "chapter": "Investor story",
       "duration": 10,
-      "title": "A backend for the next generation of organizations",
+      "title": "Infrastructure for the next generation of organizations",
       "background": "#F5F3EE",
-      "notes": "The ambition is a durable company that serves people and autonomous organizations. The immediate ask is for partners who want to build the operating foundation with us.",
+      "notes": "The company’s original thesis remains infrastructure for autonomous AI organizations, model research and application businesses. Software access and Office support that thesis rather than replace it.",
       "source": "Founder vision and verified public company contact.",
       "staticReadability": true,
       "elements": [
@@ -2358,7 +2481,7 @@
           ],
           "text": [
             {
-              "text": "One relationship\nwith Distributed.",
+              "text": "Autonomous AI\norganizations",
               "size": 79,
               "color": "#14202C",
               "bold": true,
@@ -2382,8 +2505,8 @@
           ],
           "text": [
             {
-              "text": "Access to the world’s software.",
-              "size": 42,
+              "text": "Infrastructure for the next generation of superintelligence",
+              "size": 31,
               "color": "#986630",
               "bold": false,
               "lineHeight": 1.16
@@ -2555,7 +2678,7 @@
           ],
           "text": [
             {
-              "text": "16",
+              "text": "A4",
               "size": 16,
               "color": "#647482",
               "bold": false,
@@ -3296,7 +3419,7 @@
       "harness",
       "traction",
       "heat",
-      "office",
+      "compute",
       "knowledge",
       "founder",
       "raise",
@@ -3326,7 +3449,7 @@
       "harness",
       "traction",
       "heat",
-      "office",
+      "compute",
       "knowledge",
       "founder",
       "raise",
