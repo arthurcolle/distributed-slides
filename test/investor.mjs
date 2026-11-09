@@ -50,9 +50,9 @@ try{
  assert.equal(await aud.evaluate(()=>window.DS_TEST.getState().id),await page.evaluate(()=>window.DS_TEST.getState().id));
  const reduced=await browser.newPage({reducedMotion:'reduce'});
  await reduced.goto(`http://127.0.0.1:${port}/print.html`,{waitUntil:'networkidle'});
- assert.equal(await reduced.locator('.page').count(),16);
+ assert.equal(await reduced.locator('.page').count(),deck.scenes.length);
  assert.equal(await reduced.locator('.ds-error').count(),0);
  assert.equal(await reduced.locator('.notes').count(),0,'storyboard hides notes');
  assert.deepEqual(errors,[]);
- console.log('PASS: 16 scenes, schema, deterministic motion, scene index close, audience sync/privacy, reduced-motion storyboard, no unsupported 97% claim');
+ console.log('PASS: '+deck.scenes.length+' scenes, schema, deterministic motion, scene index close, audience sync/privacy, reduced-motion storyboard, no unsupported 97% claim');
 }finally{if(browser)await browser.close();server.kill();}

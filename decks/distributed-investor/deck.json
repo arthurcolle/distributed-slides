@@ -1,10 +1,10 @@
 {
   "id": "distributed-investor",
-  "title": "Distributed Systems — Autonomous AI Organizations",
+  "title": "Distributed Systems — One backend for autonomous organizations",
   "brand": "DISTRIBUTED SYSTEMS",
   "brandTag": "INVESTOR PRESENTATION",
-  "badge": "OCTOBER 2026",
-  "footer": "Source-backed component evidence and founder-reported business facts. Architecture animations are explanatory, not live telemetry.",
+  "badge": "NOVEMBER 2026",
+  "footer": "Distributed Systems · Investor presentation · November 2026",
   "defaultRoute": "investor",
   "theme": {
     "fontBody": "Arial,Helvetica,sans-serif",
@@ -22,21 +22,21 @@
     {
       "id": "open",
       "type": "elements",
-      "chapter": "Vision",
-      "duration": 12,
-      "title": "Autonomous AI organizations",
-      "notes": "Thank you for taking the time. Distributed Systems is building infrastructure for autonomous AI organizations. Our claim is not that general intelligence is solved; our claim is that useful AI needs an operating layer around it: authority, tools, memory, records, and recovery. We have built the substrate, we have been paid to apply it, and we are now raising to make it repeatable.",
-      "source": "Founder vision, October 30 2026. Autonomous organizations are the company's goal, not a claim of achieved general intelligence. Product source: https://distributed.systems/ .",
-      "cue": "The reason we start with the organization—not the model—is that intelligence by itself does not carry responsibility.",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "One relationship with Distributed",
       "background": "#F5F3EE",
+      "notes": "The promise is our direction. Distributed provides the shared operating backend beneath apps and agents. We are building toward broad software access, not claiming universal integration today.",
+      "source": "Founder product direction, November 8 2026.",
+      "staticReadability": true,
       "elements": [
         {
-          "id": "wordmark",
-          "name": "distributed-systems-wordmark",
+          "id": "label",
+          "name": "label",
           "x": 64,
-          "y": 25,
-          "w": 350,
-          "h": 61,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
           "anchor": "t",
           "insets": [
             0,
@@ -44,21 +44,23 @@
             0,
             0
           ],
-          "src": "assets/distributed-systems-wordmark-textured-copper@4x.png",
-          "alt": "Distributed Systems",
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
         },
         {
-          "id": "e1",
-          "name": "text-1",
+          "id": "number",
+          "name": "number",
           "x": 1160,
           "y": 32,
           "w": 60,
-          "h": 30,
+          "h": 28,
           "anchor": "t",
           "insets": [
             0,
@@ -72,22 +74,34 @@
               "size": 16,
               "color": "#647482",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e2",
-          "name": "title-main",
+          "id": "wordmark",
+          "name": "wordmark",
           "x": 64,
-          "y": 160,
-          "w": 1120,
-          "h": 240,
+          "y": 92,
+          "w": 420,
+          "h": 73,
+          "src": "assets/distributed-systems-wordmark-textured-copper@4x.png",
+          "alt": "Distributed Systems",
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 222,
+          "w": 1140,
+          "h": 190,
           "anchor": "t",
           "insets": [
             0,
@@ -97,26 +111,21 @@
           ],
           "text": [
             {
-              "text": "Autonomous AI\norganizations",
-              "size": 84,
+              "text": "One relationship\nwith Distributed.",
+              "size": 82,
               "color": "#14202C",
               "bold": true,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e3",
-          "name": "text-3",
+          "id": "promise",
+          "name": "promise",
           "x": 68,
           "y": 438,
-          "w": 1050,
-          "h": 70,
+          "w": 1130,
+          "h": 65,
           "anchor": "t",
           "insets": [
             0,
@@ -126,25 +135,20 @@
           ],
           "text": [
             {
-              "text": "Building the next generation of superintelligence",
-              "size": 34,
-              "color": "#14202C",
+              "text": "Access to the world’s software.",
+              "size": 42,
+              "color": "#986630",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e4",
-          "name": "text-4",
+          "id": "byline",
+          "name": "byline",
           "x": 68,
           "y": 558,
-          "w": 900,
+          "w": 1120,
           "h": 70,
           "anchor": "t",
           "insets": [
@@ -155,75 +159,770 @@
           ],
           "text": [
             {
-              "text": "Arthur Collé, Founder\ndistributed.systems",
-              "size": 23,
+              "text": "The backend for people and autonomous organizations.\nArthur Collé, Founder",
+              "size": 25,
               "color": "#14202C",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fragmentation",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "The work falls between the apps",
+      "background": "#101B27",
+      "notes": "",
+      "source": "Company problem thesis; not a quantified market-size claim.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
           ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Start with the company in one breath. Do not lead with the architecture yet."
-    },
-    {
-      "id": "organization-layer",
-      "type": "custom",
-      "chapter": "Vision",
-      "duration": 16,
-      "title": "AI needs an organization around it",
-      "notes": "A model can produce a brilliant answer and still fail as a business. A business needs ownership, permissions, persistent state, handoffs, and a record of what happened. Our thesis is that AI needs an organization around it: a durable structure that tells the system what it may do, what must be recorded, and who accepts the result.",
-      "source": "Investment thesis, based on founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 01:38-02:31 and current product architecture. Company strategy, not a measured market-wide finding.",
-      "cue": "Our answer is a shared stack that turns that thesis into an executable system.",
-      "background": "#F5F3EE",
-      "deliveryCue": "Make the gap concrete in business terms: responsibility, persistence, and accountability.",
-      "mode": "svg",
-      "subtitle": "The operating layer that turns intelligent work into an accountable organization.",
-      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ntext('Four operating assets. One shared substrate.',120,292,900,36,C.gold,undefined,false,700);\ncard(120,390,300,132,'DSCO CLI','Governed work execution','gold');\ncard(470,390,300,132,'Autobot / TMA','Capabilities and workflows','blue');\ncard(820,390,300,132,'Chimera / Router','Model dispatch and accounting','gold');\ncard(1170,390,300,132,'GraphSub','Persistent connected state','green');\nflow([[420,456],[470,456]],1.2,C.blue);\nflow([[770,456],[820,456]],2,C.gold);\nflow([[1120,456],[1170,456]],2.8,C.green);\ntext('Reusable operating assets for accountable autonomous work.',120,610,1180,30,C.muted);",
-      "phases": [],
-      "footnote": "Architecture diagram. It describes component responsibilities, not live traffic or autonomous operation."
-    },
-    {
-      "id": "shared-stack",
-      "type": "custom",
-      "chapter": "Vision",
-      "duration": 16,
-      "title": "One stack for work and organizations",
-      "notes": "This is the architecture we are building. DSCO is the local-first harness for executing work. Tool Management exposes capabilities and their schemas. Router and Chimera dispatch work across models and providers. GraphSub gives the system connected state and persistence. HEAT is the first application-shaped proof point. These components are real and inspectable, while the depth of their integration is still a diligence question.",
-      "source": "Editable architecture diagram. Sources: https://distributed.systems/; founder YC pitch 00:10-00:51. Read-only October 30 repository review confirms GraphSub Rust graph/persistence and Router dispatch/accounting.",
-      "cue": "At the center of that stack is DSCO, the harness that turns a mandate into work.",
-      "background": "#F5F3EE",
-      "mode": "svg",
-      "subtitle": "Architecture overview. Connections describe responsibilities, not live traffic.",
-      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ncard(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold');\ncard(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue');\ncard(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold');\ncard(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green');\nflow([[800,430],[800,480],[300,480],[300,530]],1.2,C.blue);\nflow([[800,430],[800,530]],2,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],2.8,C.green);",
-      "phases": [
-        {
-          "title": "Execution",
-          "body": "DSCO directs the work using shared capabilities."
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
         },
         {
-          "title": "Action and intelligence",
-          "body": "Tools expose contracts. The router selects model execution."
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "02",
+              "size": 16,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
         },
         {
-          "title": "Organizational state",
-          "body": "GraphSub preserves connected context for subsequent work."
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 118,
+          "w": 1140,
+          "h": 156,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Software is abundant.\nCoordination is still manual.",
+              "size": 63,
+              "color": "#F5F3EE",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "x": 68,
+          "y": 327,
+          "w": 1110,
+          "h": 100,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "People bridge accounts, permissions, disconnected data\nand unfinished workflows every day.",
+              "size": 35,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "thesis",
+          "name": "thesis",
+          "x": 68,
+          "y": 495,
+          "w": 1110,
+          "h": 100,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "An AI model can reason about the work.\nAn organization still needs somewhere to run it.",
+              "size": 33,
+              "color": "#D9B78B",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
         }
-      ],
-      "footnote": "Implemented components. This diagram does not assert end-to-end unattended operation.",
-      "deliveryCue": "Walk left to right through the stack; keep the labels more important than the animation."
+      ]
+    },
+    {
+      "id": "backend",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "One backend for the organization",
+      "background": "#F5F3EE",
+      "notes": "The backend is the commercial relationship. Apps are interfaces and capabilities on it. This is more than a connector catalog: state and execution survive individual requests.",
+      "source": "Existing DSCO, Tool Management, Router and GraphSub implementations; founder direction Nov 8.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "03",
+              "size": 16,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 116,
+          "w": 1140,
+          "h": 85,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "One backend. Many applications.",
+              "size": 57,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "apps",
+          "name": "apps",
+          "x": 68,
+          "y": 275,
+          "w": 1120,
+          "h": 50,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "OFFICE     DOMAIN APPLICATIONS     AGENTS",
+              "size": 29,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "core",
+          "name": "core",
+          "x": 64,
+          "y": 350,
+          "w": 1110,
+          "h": 105,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Distributed",
+              "size": 86,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "x": 68,
+          "y": 510,
+          "w": 1120,
+          "h": 90,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Shared state and permissions. Governed execution.\nModel routing and compute across the organization.",
+              "size": 32,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Native applications and service adapters. Broader integration is the product roadmap.",
+              "size": 15,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customers",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "A first customer buys a concrete outcome",
+      "background": "#F5F3EE",
+      "notes": "Sell a scoped operational outcome. The account is an organization adopting a backend, not a developer purchasing another SDK. Avoid invented customers, pipeline or prices.",
+      "source": "Proposed go-to-market based on founder direction, not a claim of existing pipeline, government customers, certification or procurement access. Commercial approach: scoped paid engagements, consistent with https://distributed.systems/ .",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "04",
+              "size": 16,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 112,
+          "w": 1140,
+          "h": 80,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "A valuable workflow comes first",
+              "size": 56,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "who",
+          "name": "who",
+          "x": 68,
+          "y": 252,
+          "w": 400,
+          "h": 35,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "INITIAL BUYER",
+              "size": 18,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "buyer",
+          "name": "buyer",
+          "x": 68,
+          "y": 292,
+          "w": 1100,
+          "h": 62,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Enterprise operations",
+              "size": 42,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "x": 68,
+          "y": 380,
+          "w": 1120,
+          "h": 95,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Example: reconcile an incoming service request with\naccount records, prepare the work and retain an audit trail.",
+              "size": 32,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "entry",
+          "name": "entry",
+          "x": 68,
+          "y": 526,
+          "w": 1120,
+          "h": 90,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Paid deployment with agreed acceptance criteria.\nExpand as more workflows use the same backend.",
+              "size": 30,
+              "color": "#986630",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Illustrative target workflow. Defense and intelligence remain strategic opportunities, not claimed contracts.",
+              "size": 15,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-model",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "Revenue follows customer deployment",
+      "background": "#101B27",
+      "notes": "Services paid for the first engineering. The next test is a repeatable backend product with measured costs, not unbounded bespoke consulting. Packaging and recurring rates remain to be validated.",
+      "source": "Founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:57-01:11 and 02:01-02:31. Website offers scoped six-month project engagements. Future application/spinout economics are strategy, not contracted recurring revenue or completed spinouts.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "05",
+              "size": 16,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 106,
+          "w": 1140,
+          "h": 155,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Customer work becomes\nreusable infrastructure",
+              "size": 61,
+              "color": "#F5F3EE",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "first",
+          "name": "first",
+          "x": 68,
+          "y": 310,
+          "w": 1100,
+          "h": 45,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "01  Paid implementation",
+              "size": 32,
+              "color": "#D9B78B",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "firstb",
+          "name": "firstb",
+          "x": 125,
+          "y": 362,
+          "w": 1060,
+          "h": 50,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Scope, integrate and validate one operational workflow.",
+              "size": 27,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "name": "next",
+          "x": 68,
+          "y": 448,
+          "w": 1100,
+          "h": 45,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "02  Ongoing backend service",
+              "size": 32,
+              "color": "#D9B78B",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "nextb",
+          "name": "nextb",
+          "x": 125,
+          "y": 500,
+          "w": 1060,
+          "h": 50,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Charge for continued operation and expand with usage.",
+              "size": 27,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "last",
+          "name": "last",
+          "x": 68,
+          "y": 594,
+          "w": 1110,
+          "h": 45,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Applications create additional businesses on the same foundation.",
+              "size": 26,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Commercial plan. Current revenue is services revenue; recurring platform economics remain to be proven.",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "harness",
       "type": "elements",
-      "chapter": "System",
+      "chapter": "Investor story",
       "duration": 12,
-      "title": "DSCO puts the stack to work",
+      "title": "The execution loop already has a working surface",
       "notes": "DSCO turns a mandate into work. It decomposes the objective, delegates bounded tasks, executes through approved tools, verifies the result, and records what happened. If a premise changes or a step fails, the run can recover instead of silently disappearing. That is the difference between asking a model for an answer and operating a system that can be accountable for work.",
       "source": "DSCO product description: https://distributed.systems/ . Founder explicitly identifies dsco-cli as harness for executing work and automating business actions. Diagram is conceptual product workflow, not a UI screenshot or claim every integration is production-tested.",
       "cue": "The design boundary that matters most is the separation between a model’s judgment and the authority to act.",
@@ -274,7 +973,7 @@
           ],
           "text": [
             {
-              "text": "04",
+              "text": "06",
               "size": 15,
               "color": "#647482",
               "bold": false,
@@ -303,7 +1002,7 @@
           ],
           "text": [
             {
-              "text": "Work becomes an accountable execution loop",
+              "text": "A request becomes accountable work",
               "size": 45,
               "color": "#14202C",
               "bold": true,
@@ -332,7 +1031,7 @@
           ],
           "text": [
             {
-              "text": "A local harness carries a task from proposal through admission and execution—then retains the result or an explicit uncertain effect.",
+              "text": "The harness checks authority, executes tools and keeps a receipt. A customer can inspect the result instead of trusting a chat transcript.",
               "size": 26,
               "color": "#14202C",
               "bold": false,
@@ -429,53 +1128,23 @@
       "deliveryCue": "Explain the loop as a workflow, not as a feature list."
     },
     {
-      "id": "authority",
-      "type": "custom",
-      "chapter": "System",
-      "duration": 16,
-      "title": "Authority is separate from model judgment",
-      "notes": "The model’s confidence is not authority. Authority comes from the mandate, the capability boundary, the budget, the stop conditions, and the escalation path. DSCO’s governed execution and Chronicle receipts are the implementation evidence behind this design. We are not asking an investor to take a security guarantee on faith; we are showing the control surface we have built and the proof still required.",
-      "source": "DSCO source and implementation evidence: https://github.com/arthurcolle/dsco",
-      "cue": "Once authority is explicit, capabilities can be shared without making the whole system opaque.",
-      "background": "#F5F3EE",
-      "mode": "svg",
-      "subtitle": "DSCO implementation: proposal, admission, execution and Chronicle receipts.",
-      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{card(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue');if(i<3)flow([[420+i*390,457],[460+i*390,457]],1.2+i*.8,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted);",
-      "phases": [
-        {
-          "title": "Suggestion",
-          "body": "Model judgment proposes work."
-        },
-        {
-          "title": "Permission",
-          "body": "Governance admits the action before execution."
-        },
-        {
-          "title": "Evidence",
-          "body": "Chronicle records the outcome, including uncertainty."
-        }
-      ],
-      "footnote": "Source: DSCO CLI code inspection, Oct 30 2026. Animation illustrates design, not a live action log.",
-      "deliveryCue": "Slow down here. This is the safety and trust thesis of the company."
-    },
-    {
-      "id": "action-layer",
+      "id": "traction",
       "type": "elements",
-      "chapter": "System",
-      "duration": 12,
-      "title": "A shared action layer across services",
-      "notes": "Tool Management is the shared action surface. It discovers capabilities, exposes schemas, executes calls, composes workflows, and keeps external effects behind explicit boundaries. That lets us add capabilities without giving every model a new private integration. The important product property is not a large tool count; it is that the authority and result shape remain legible as the system grows.",
-      "source": "Tool Management service: https://tools.distributed.systems",
-      "cue": "The action layer becomes much more useful when routing and memory are first-class parts of the same system.",
-      "background": "#F5F3EE",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "An existing operating foundation",
+      "background": "#101B27",
+      "notes": "Distinguish proof of paid delivery from proof of repeatability. The next commercial milestone is another paid deployment, not a claim of product-market fit.",
+      "source": "Founder-reported commercial evidence; not independently audited.",
+      "staticReadability": true,
       "elements": [
         {
-          "id": "e0",
-          "name": "text-0",
+          "id": "label",
+          "name": "label",
           "x": 64,
           "y": 32,
-          "w": 850,
-          "h": 30,
+          "w": 1000,
+          "h": 28,
           "anchor": "t",
           "insets": [
             0,
@@ -486,300 +1155,20 @@
           "text": [
             {
               "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
+              "size": 15,
+              "color": "#AFC5D9",
               "bold": true,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e1",
-          "name": "text-1",
+          "id": "number",
+          "name": "number",
           "x": 1160,
           "y": 32,
           "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "06",
-              "size": 16,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "A shared action layer across services",
-              "size": 48,
-              "color": "#14202C",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 237,
-          "w": 1090,
-          "h": 65,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Tool Management API",
-              "size": 39,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 324,
-          "w": 1100,
-          "h": 108,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Discover a capability. Inspect its contract.\nExecute it through a common interface.",
-              "size": 34,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 64,
-          "y": 493,
-          "w": 520,
-          "h": 48,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "FastAPI + MCP registry",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 64,
-          "y": 550,
-          "w": 600,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Composed workflows, events,\nfederation and service adapters",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 740,
-          "y": 493,
-          "w": 460,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "tools.distributed.systems",
-              "size": 26,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 740,
-          "y": 550,
-          "w": 450,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Reusable connections for\neach new organization",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Connect the governance idea to a practical product surface."
-    },
-    {
-      "id": "intelligence-memory",
-      "type": "elements",
-      "chapter": "System",
-      "duration": 12,
-      "title": "Intelligence and organizational memory",
-      "notes": "The stack needs two more things: intelligence can be routed to the right model or provider, and organizational memory can persist beyond a single context window. Router and Chimera handle bounded dispatch and metering. GraphSub provides connected state, persistence, and query primitives. This is component evidence, not a claim of production scale; the value is that the pieces have a common operating contract.",
-      "source": "Router: https://router.distributed.systems · GraphSub: https://github.com/arthurcolle/graphsub",
-      "cue": "HEAT is where we are applying this architecture to a concrete operating problem.",
-      "background": "#F5F3EE",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
+          "h": 28,
           "anchor": "t",
           "insets": [
             0,
@@ -791,24 +1180,19 @@
             {
               "text": "07",
               "size": 16,
-              "color": "#647482",
+              "color": "#AFC5D9",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e2",
-          "name": "title-main",
+          "id": "headline",
+          "name": "headline",
           "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
+          "y": 112,
+          "w": 1140,
+          "h": 80,
           "anchor": "t",
           "insets": [
             0,
@@ -818,26 +1202,21 @@
           ],
           "text": [
             {
-              "text": "Intelligence and organizational memory",
-              "size": 48,
-              "color": "#14202C",
+              "text": "Built through real work",
+              "size": 60,
+              "color": "#F5F3EE",
               "bold": true,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e3",
-          "name": "text-3",
+          "id": "revenue",
+          "name": "revenue",
           "x": 64,
-          "y": 245,
-          "w": 530,
-          "h": 60,
+          "y": 247,
+          "w": 590,
+          "h": 150,
           "anchor": "t",
           "insets": [
             0,
@@ -847,54 +1226,20 @@
           ],
           "text": [
             {
-              "text": "Chimera / Router",
-              "size": 37,
-              "color": "#986630",
+              "text": "$70k",
+              "size": 124,
+              "color": "#D9B78B",
               "bold": true,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 330,
-          "w": 530,
-          "h": 105,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Select how a request runs\nacross available models.",
-              "size": 32,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 64,
-          "y": 497,
-          "w": 530,
+          "id": "revlabel",
+          "name": "revlabel",
+          "x": 68,
+          "y": 425,
+          "w": 550,
           "h": 100,
           "anchor": "t",
           "insets": [
@@ -905,26 +1250,21 @@
           ],
           "text": [
             {
-              "text": "Bounded dispatch, provider lanes,\nmetering and accounting",
-              "size": 26,
-              "color": "#14202C",
+              "text": "2026 services revenue\nfrom one client",
+              "size": 34,
+              "color": "#F5F3EE",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e6",
-          "name": "text-6",
-          "x": 690,
-          "y": 245,
-          "w": 530,
-          "h": 60,
+          "id": "code",
+          "name": "code",
+          "x": 720,
+          "y": 267,
+          "w": 475,
+          "h": 70,
           "anchor": "t",
           "insets": [
             0,
@@ -934,55 +1274,21 @@
           ],
           "text": [
             {
-              "text": "GraphSub + Lingo",
-              "size": 37,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 690,
-          "y": 330,
-          "w": 530,
-          "h": 105,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Retain connected state\nacross tasks and agents.",
+              "text": "Inspectable implementations",
               "size": 32,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
+              "color": "#D9B78B",
+              "bold": true,
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e8",
-          "name": "text-8",
-          "x": 690,
-          "y": 497,
-          "w": 530,
-          "h": 100,
+          "id": "codeb",
+          "name": "codeb",
+          "x": 720,
+          "y": 365,
+          "w": 470,
+          "h": 200,
           "anchor": "t",
           "insets": [
             0,
@@ -992,26 +1298,21 @@
           ],
           "text": [
             {
-              "text": "Rust graph engine, queries and\npersistence. Explicit world artifacts.",
-              "size": 26,
-              "color": "#14202C",
+              "text": "DSCO execution\nTool Management\nRouter / Chimera\nGraphSub",
+              "size": 29,
+              "color": "#F5F3EE",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
+          ]
         },
         {
-          "id": "e9",
-          "name": "text-9",
+          "id": "foot",
+          "name": "foot",
           "x": 64,
-          "y": 654,
-          "w": 1150,
-          "h": 36,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
           "anchor": "t",
           "insets": [
             0,
@@ -1021,30 +1322,24 @@
           ],
           "text": [
             {
-              "text": "Components are implemented. Production-scale performance remains a separate validation milestone.",
+              "text": "Founder-reported revenue, carried forward from October 30. Not ARR. Customer concentration is high.",
               "size": 15,
-              "color": "#647482",
+              "color": "#AFC5D9",
               "bold": false,
-              "lineHeight": 1.18
+              "lineHeight": 1.16
             }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
+          ]
         }
-      ],
-      "deliveryCue": "Describe routing and memory as infrastructure, not as magic."
+      ]
     },
     {
       "id": "heat",
       "type": "elements",
-      "chapter": "System",
+      "chapter": "Investor story",
       "duration": 12,
-      "title": "HEAT is our first organization-shaped application",
-      "notes": "HEAT Trading is our first organization-shaped application and the first spin-out business. It combines research systems with ingestion, tools, realtime interfaces, and operating workflows. The public product is a research preview; order-placement schedules are paused. So this is not a profitability, returns, or unattended-live-trading claim. It is our first concrete environment for proving the organization layer against a demanding workflow.",
-      "source": "Sources: dsco-heat-trading/docs/CURRENT_RUNTIME.md, checkout81c8b62 Oct17 modified locally, reviewed Oct30. Hetzner/Neon path, ingestion, authenticated MCP, realtime API, Temporal. Order-placement schedules explicitly paused. HEAT public research preview and founder YC pitch. Mainline spinout status is founder-stated and pending. No profitability, fund regulation, completed legal entity or live unattended execution claim.",
+      "title": "HEAT tests the backend against a demanding workflow",
+      "notes": "HEAT is a proving ground for the backend. Weather ingestion, research and market operations exercise the shared systems. The new copilot snapshot tool supports fee/depth-aware exit analysis and audit logs, but live position monitoring and production deployment remain unfinished. No profitability claim.",
+      "source": "Sources: dsco-heat-trading/docs/CURRENT_RUNTIME.md, checkout81c8b62 Oct17 modified locally, reviewed Oct30. Hetzner/Neon path, ingestion, authenticated MCP, realtime API, Temporal. Order-placement schedules explicitly paused. HEAT public research preview and founder YC pitch. Mainline spinout status is founder-stated and pending. No profitability, fund regulation, completed legal entity or live unattended execution claim. November 8 local copilot implementation: 127 focused tests and mocked UI flows passed, not deployed.",
       "cue": "The larger opportunity is not a single agent; it is an organization that persists when agents change.",
       "background": "#101B27",
       "elements": [
@@ -1122,7 +1417,7 @@
           ],
           "text": [
             {
-              "text": "A proving ground for organization-shaped work",
+              "text": "HEAT makes the requirements real",
               "size": 43,
               "color": "#F5F3EE",
               "bold": true,
@@ -1141,7 +1436,7 @@
           "x": 64,
           "y": 187,
           "w": 360,
-          "h": 125,
+          "h": 360,
           "anchor": "t",
           "insets": [
             0,
@@ -1151,7 +1446,7 @@
           ],
           "text": [
             {
-              "text": "HEAT connects weather and market observations to bounded research and operations. It is an application of the shared stack—not the whole company.",
+              "text": "Weather observations, forecasts and market data feed decision support.\n\nThe same backend must retain context, track evidence and expose uncertainty.",
               "size": 24,
               "color": "#F5F3EE",
               "bold": false,
@@ -1231,7 +1526,7 @@
           ],
           "text": [
             {
-              "text": "Research application. Autonomous live trading and a completed legal spinout are not claimed.",
+              "text": "Research and development. The new copilot is a local snapshot tool; live monitoring and returns are not claimed.",
               "size": 14,
               "color": "#AFC5D9",
               "bold": false,
@@ -1248,9 +1543,943 @@
       "deliveryCue": "Be precise about what HEAT is and is not. Investors will hear “trading” and may over-infer."
     },
     {
+      "id": "office",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "A native workspace on the same backend",
+      "background": "#F5F3EE",
+      "notes": "Office gives the shared backend a native surface. Do not confuse a collection of forks with a finished integrated suite.",
+      "source": "Founder report Nov 8, 2026; no suite-wide integration or production-readiness claim.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "09",
+              "size": 16,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 110,
+          "w": 1140,
+          "h": 155,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Office is an interface.\nDistributed is the foundation.",
+              "size": 61,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "app",
+          "name": "app",
+          "x": 68,
+          "y": 320,
+          "w": 1100,
+          "h": 65,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Documents. Spreadsheets. Presentations.",
+              "size": 36,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "x": 68,
+          "y": 425,
+          "w": 1110,
+          "h": 100,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "People and agents should work with the same objects,\npermissions and execution history across applications.",
+              "size": 32,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "road",
+          "name": "road",
+          "x": 68,
+          "y": 565,
+          "w": 1110,
+          "h": 75,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Application forks are the starting point.\nA shared operating environment is the product.",
+              "size": 27,
+              "color": "#986630",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DSCO Office: founder-reported GridCraft and related app forks. Unified suite integration is in development.",
+              "size": 15,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "The organization keeps its knowledge",
+      "background": "#101B27",
+      "notes": "The SecDB analogy is a design target: one consistent model across applications, dependency-aware recalculation, provenance and isolated scenarios. Do not imply bitemporal/scenario integration is complete.",
+      "source": "GraphSub public main 8e45ce9 read-only review Nov 8; src/compute/graph.rs, runtime.rs, txn/mvcc_store.rs.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "10",
+              "size": 16,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 111,
+          "w": 1140,
+          "h": 160,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Apps change.\nOrganizational knowledge persists.",
+              "size": 60,
+              "color": "#F5F3EE",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "body",
+          "name": "body",
+          "x": 68,
+          "y": 334,
+          "w": 1120,
+          "h": 95,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "GraphSub connects durable objects with computation.\nThe direction: one executable model of the organization.",
+              "size": 33,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "details",
+          "name": "details",
+          "x": 68,
+          "y": 500,
+          "w": 1100,
+          "h": 110,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Shared objects and dependencies\nIsolated scenarios and reproducible history",
+              "size": 34,
+              "color": "#D9B78B",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Typed graph and compute primitives exist. SecDB-like scenario and temporal integration is roadmap work.",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "founder",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "Founder-led systems engineering",
+      "background": "#F5F3EE",
+      "notes": "Security research is relevant to the infrastructure: agents and organizations need controls across sessions. The paper does not specify individual author contributions.",
+      "source": "https://arxiv.org/abs/2605.11029 ; prior founder-reported paid delivery and implementation evidence.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "11",
+              "size": 16,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 122,
+          "w": 1120,
+          "h": 105,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Arthur Collé",
+              "size": 82,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "sub",
+          "name": "sub",
+          "x": 68,
+          "y": 242,
+          "w": 1110,
+          "h": 55,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Founder, Distributed Systems",
+              "size": 35,
+              "color": "#986630",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "work",
+          "name": "work",
+          "x": 68,
+          "y": 363,
+          "w": 1120,
+          "h": 55,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Paid delivery and a working infrastructure stack",
+              "size": 33,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "research",
+          "name": "research",
+          "x": 68,
+          "y": 460,
+          "w": 1110,
+          "h": 48,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "FragBench coauthor",
+              "size": 32,
+              "color": "#986630",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "researchb",
+          "name": "researchb",
+          "x": 68,
+          "y": 518,
+          "w": 1120,
+          "h": 85,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Cross-session attacks hidden in benign-looking fragments.\nAffiliation: Distributed Systems / SPAR.",
+              "size": 28,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "FragBench · arXiv preprint · May 2026 · arxiv.org/abs/2605.11029",
+              "size": 15,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raise",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "Capital buys capacity and repeatability",
+      "background": "#101B27",
+      "notes": "Keep the proposed raise, but do not pass arithmetic allocation off as a costed budget. 90% would leave $600k for other needs and has not established runway. Capacity purchases should follow cost and utilization gates.",
+      "source": "Founder $6m seed direction Oct 27–31, 2026; 90% compute preference Oct 31. No new financing terms or committed spend.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "12",
+              "size": 16,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "amount",
+          "name": "amount",
+          "x": 64,
+          "y": 103,
+          "w": 1120,
+          "h": 130,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "$6M",
+              "size": 112,
+              "color": "#D9B78B",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 68,
+          "y": 244,
+          "w": 1120,
+          "h": 60,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Proposed seed round",
+              "size": 40,
+              "color": "#F5F3EE",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "deliver",
+          "name": "deliver",
+          "x": 68,
+          "y": 360,
+          "w": 1100,
+          "h": 45,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "The next proof points",
+              "size": 29,
+              "color": "#D9B78B",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "outcomes",
+          "name": "outcomes",
+          "x": 68,
+          "y": 422,
+          "w": 1120,
+          "h": 155,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Repeat paid deployments on the shared backend.\nMeasure workload cost and operating reliability.\nExpand owned capacity against demonstrated demand.",
+              "size": 31,
+              "color": "#F5F3EE",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "foot",
+          "name": "foot",
+          "x": 64,
+          "y": 658,
+          "w": 1140,
+          "h": 40,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Founder target: 90% toward compute. Procurement, power and operating budget require validation before allocation.",
+              "size": 15,
+              "color": "#AFC5D9",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "type": "elements",
+      "chapter": "Investor story",
+      "duration": 10,
+      "title": "A backend for the next generation of organizations",
+      "background": "#F5F3EE",
+      "notes": "The ambition is a durable company that serves people and autonomous organizations. The immediate ask is for partners who want to build the operating foundation with us.",
+      "source": "Founder vision and verified public company contact.",
+      "staticReadability": true,
+      "elements": [
+        {
+          "id": "label",
+          "name": "label",
+          "x": 64,
+          "y": 32,
+          "w": 1000,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "DISTRIBUTED SYSTEMS",
+              "size": 15,
+              "color": "#647482",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "number",
+          "name": "number",
+          "x": 1160,
+          "y": 32,
+          "w": 60,
+          "h": 28,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "13",
+              "size": 16,
+              "color": "#647482",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "wordmark",
+          "name": "wordmark",
+          "x": 64,
+          "y": 92,
+          "w": 420,
+          "h": 73,
+          "src": "assets/distributed-systems-wordmark-textured-copper@4x.png",
+          "alt": "Distributed Systems",
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "headline",
+          "name": "headline",
+          "x": 64,
+          "y": 231,
+          "w": 1140,
+          "h": 180,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "One relationship\nwith Distributed.",
+              "size": 79,
+              "color": "#14202C",
+              "bold": true,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "promise",
+          "name": "promise",
+          "x": 68,
+          "y": 441,
+          "w": 1130,
+          "h": 65,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "Access to the world’s software.",
+              "size": 42,
+              "color": "#986630",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        },
+        {
+          "id": "contact",
+          "name": "contact",
+          "x": 68,
+          "y": 562,
+          "w": 1120,
+          "h": 70,
+          "anchor": "t",
+          "insets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": [
+            {
+              "text": "arthur@distributed.systems\ndistributed.systems",
+              "size": 26,
+              "color": "#14202C",
+              "bold": false,
+              "lineHeight": 1.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared-stack",
+      "type": "custom",
+      "chapter": "Technical appendix",
+      "duration": 16,
+      "title": "One stack for work and organizations",
+      "notes": "This is the architecture we are building. DSCO is the local-first harness for executing work. Tool Management exposes capabilities and their schemas. Router and Chimera dispatch work across models and providers. GraphSub gives the system connected state and persistence. HEAT is the first application-shaped proof point. These components are real and inspectable, while the depth of their integration is still a diligence question.",
+      "source": "Editable architecture diagram. Sources: https://distributed.systems/; founder YC pitch 00:10-00:51. Read-only October 30 repository review confirms GraphSub Rust graph/persistence and Router dispatch/accounting.",
+      "cue": "At the center of that stack is DSCO, the harness that turns a mandate into work.",
+      "background": "#F5F3EE",
+      "mode": "svg",
+      "subtitle": "Architecture overview. Connections describe responsibilities, not live traffic.",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\ncard(390,280,820,150,'DSCO','Execution harness: files, tools and coordinated agents','gold');\ncard(80,530,440,165,'Tool Management','Typed capabilities, discovery and execution','blue');\ncard(580,530,440,165,'Chimera / Router','Model selection, dispatch and accounting','gold');\ncard(1080,530,440,165,'GraphSub','Connected state, memory and provenance','green');\nflow([[800,430],[800,480],[300,480],[300,530]],1.2,C.blue);\nflow([[800,430],[800,530]],2,C.gold);\nflow([[800,430],[800,480],[1300,480],[1300,530]],2.8,C.green);",
+      "phases": [
+        {
+          "title": "Execution",
+          "body": "DSCO directs the work using shared capabilities."
+        },
+        {
+          "title": "Action and intelligence",
+          "body": "Tools expose contracts. The router selects model execution."
+        },
+        {
+          "title": "Organizational state",
+          "body": "GraphSub preserves connected context for subsequent work."
+        }
+      ],
+      "footnote": "Implemented components. This diagram does not assert end-to-end unattended operation.",
+      "deliveryCue": "Walk left to right through the stack; keep the labels more important than the animation."
+    },
+    {
+      "id": "authority",
+      "type": "custom",
+      "chapter": "Technical appendix",
+      "duration": 16,
+      "title": "Authority is separate from model judgment",
+      "notes": "The model’s confidence is not authority. Authority comes from the mandate, the capability boundary, the budget, the stop conditions, and the escalation path. DSCO’s governed execution and Chronicle receipts are the implementation evidence behind this design. We are not asking an investor to take a security guarantee on faith; we are showing the control surface we have built and the proof still required.",
+      "source": "DSCO source and implementation evidence: https://github.com/arthurcolle/dsco",
+      "cue": "Once authority is explicit, capabilities can be shared without making the whole system opaque.",
+      "background": "#F5F3EE",
+      "mode": "svg",
+      "subtitle": "DSCO implementation: proposal, admission, execution and Chronicle receipts.",
+      "code": "const {rect,line,flow,text,C}=api;\nconst card=(x,y,w,h,title,body,tone)=>{rect(x,y,w,h,C.panel,C.line);line(x,y,x,y+h,C[tone],4);text(title,x+22,y+38,w-44,27,C.fg,undefined,false,600);text(body,x+22,y+84,w-44,22,C.muted);};\nconst items=[['Proposal','Model suggests an action.'],['Admission','Capability and governance checks.'],['Execution','Admitted tool or worker runs.'],['Receipt','Result or uncertain effect retained.']];\nitems.forEach((n,i)=>{card(70+i*390,355,350,205,n[0],n[1],i===1?'gold':'blue');if(i<3)flow([[420+i*390,457],[460+i*390,457]],1.2+i*.8,C.gold);});\ntext('Authority remains an explicit boundary between a suggestion and an action.',90,665,1400,30,C.muted);",
+      "phases": [
+        {
+          "title": "Suggestion",
+          "body": "Model judgment proposes work."
+        },
+        {
+          "title": "Permission",
+          "body": "Governance admits the action before execution."
+        },
+        {
+          "title": "Evidence",
+          "body": "Chronicle records the outcome, including uncertainty."
+        }
+      ],
+      "footnote": "Source: DSCO CLI code inspection, Oct 30 2026. Animation illustrates design, not a live action log.",
+      "deliveryCue": "Slow down here. This is the safety and trust thesis of the company."
+    },
+    {
       "id": "durable-organization",
       "type": "custom",
-      "chapter": "System",
+      "chapter": "Technical appendix",
       "duration": 16,
       "title": "Organizations persist beyond a single agent",
       "notes": "An organization should not disappear when one agent stops, a provider changes, or a founder hands off a task. Our Organization Compiler work is aimed at projecting a durable organization across runtime, router, graph, and agent surfaces. The prototype direction is real, but production admission is incomplete. The investment opportunity is to turn that architecture into an independently operating system, not to pretend that milestone is already finished.",
@@ -1278,1806 +2507,11 @@
       "deliveryCue": "Move from the application to the company-level architecture."
     },
     {
-      "id": "business-model",
-      "type": "elements",
-      "chapter": "Business",
-      "duration": 12,
-      "title": "A shared-stack business model",
-      "notes": "The business model starts with scoped paid engagements. We enter through a workflow where the customer can define acceptance, permissions, and value. We then turn the repeated parts into operating infrastructure and, where there is a strong wedge, into a focused application or spin-out. The company website already offers six-month project engagements; future recurring economics are a plan, not contracted ARR.",
-      "source": "Founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:57-01:11 and 02:01-02:31. Website offers scoped six-month project engagements. Future application/spinout economics are strategy, not contracted recurring revenue or completed spinouts.",
-      "cue": "We are early, so the traction claim is deliberately narrow and easy to audit.",
-      "background": "#F5F3EE",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "10",
-              "size": 16,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "A shared-stack business model",
-              "size": 48,
-              "color": "#14202C",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 241,
-          "w": 1140,
-          "h": 63,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Distributed Systems owns the shared infrastructure",
-              "size": 35,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 342,
-          "w": 380,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Paid engagements",
-              "size": 29,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 510,
-          "y": 342,
-          "w": 690,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Customer work funds development\nand exposes real operating needs.",
-              "size": 27,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 64,
-          "y": 439,
-          "w": 380,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Reusable capabilities",
-              "size": 29,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 510,
-          "y": 439,
-          "w": 690,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "The same tools, harness and state\nserve subsequent deployments.",
-              "size": 27,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 64,
-          "y": 536,
-          "w": 380,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Application businesses",
-              "size": 29,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e9",
-          "name": "text-9",
-          "x": 510,
-          "y": 536,
-          "w": 690,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Develop and spin out businesses\nwhile retaining the underlying stack.",
-              "size": 27,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Keep this commercial and simple: services first, reusable infrastructure next."
-    },
-    {
-      "id": "traction",
-      "type": "elements",
-      "chapter": "Business",
-      "duration": 12,
-      "title": "An operating foundation",
-      "notes": "The traction claim is deliberately simple: founder-reported services revenue from one client in 2026. It is services revenue, not ARR, and customer concentration is high. The work paid for the company’s operating foundation and gave us a real delivery environment. The next proof is repeat purchase: measured delivery economics, a second accepted deployment, and less dependence on founder intervention.",
-      "source": "Founder-reported commercial evidence; not independently audited.",
-      "cue": "The next commercial step is to take that capability to customers with workflows where accountability matters.",
-      "background": "#101B27",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#AFC5D9",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "11",
-              "size": 16,
-              "color": "#AFC5D9",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "An operating foundation",
-              "size": 48,
-              "color": "#F5F3EE",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 238,
-          "w": 640,
-          "h": 135,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "$70k",
-              "size": 108,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 68,
-          "y": 386,
-          "w": 1050,
-          "h": 55,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Revenue from one client in 2026",
-              "size": 34,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 68,
-          "y": 505,
-          "w": 520,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Implemented components",
-              "size": 28,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 68,
-          "y": 566,
-          "w": 560,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DSCO, Tool Management, Router\nand GraphSub have inspectable code.",
-              "size": 24,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 738,
-          "y": 505,
-          "w": 480,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "A concrete application",
-              "size": 28,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 738,
-          "y": 566,
-          "w": 480,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "HEAT combines research systems\nwith operating workflows.",
-              "size": 24,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e9",
-          "name": "text-9",
-          "x": 64,
-          "y": 654,
-          "w": 1150,
-          "h": 36,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Revenue is founder-reported services revenue, not ARR. Customer concentration is high.",
-              "size": 15,
-              "color": "#AFC5D9",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "State the actual cleanly, then stop. Do not inflate it."
-    },
-    {
-      "id": "customers",
-      "type": "elements",
-      "chapter": "Business",
-      "duration": 12,
-      "title": "Target customers and deployment strategy",
-      "notes": "Our initial customers are teams with expensive workflows that cross systems and require a clear record of who did what. We start with a bounded process, define acceptance, and earn the right to expand. Defense and intelligence are target markets because deployment ownership and controlled execution matter there, but we are not claiming a defense contract, accreditation, or existing pipeline.",
-      "source": "Proposed go-to-market based on founder direction, not a claim of existing pipeline, government customers, certification or procurement access. Commercial approach: scoped paid engagements, consistent with https://distributed.systems/ .",
-      "cue": "To support that strategy, we want to own the capacity the stack depends on.",
-      "background": "#F5F3EE",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "12",
-              "size": 16,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Target customers and deployment strategy",
-              "size": 48,
-              "color": "#14202C",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 246,
-          "w": 650,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Enterprise operations",
-              "size": 37,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 327,
-          "w": 1100,
-          "h": 100,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Start with a bounded process that crosses systems\nand requires a clear record of who did what.",
-              "size": 31,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 64,
-          "y": 481,
-          "w": 650,
-          "h": 60,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Defense and intelligence",
-              "size": 37,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 64,
-          "y": 562,
-          "w": 1100,
-          "h": 83,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Pursue workflows that value controlled execution,\nretained context and deployment ownership.",
-              "size": 29,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 64,
-          "y": 654,
-          "w": 1150,
-          "h": 36,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Go-to-market priorities. No defense contract, accreditation or customer deployment is implied.",
-              "size": 15,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Describe the customer filter, not a fictional pipeline."
-    },
-    {
-      "id": "compute",
-      "type": "elements",
-      "chapter": "Business",
-      "duration": 12,
-      "title": "Owned compute supports the shared stack",
-      "notes": "The compute strategy is not a claim that we already have a large GPU fleet. We have evidence of owned workers completing dated deterministic CPU jobs. The proposed $6 million raise allocates roughly 80 percent—$4.8 million—to physical compute we intend to purchase and operate at Montrose Data Center, 401 Nina Place, Rockville, Maryland. The facility, power, cooling, network, equipment, and purchase terms still need diligence; we will release spend against measured workloads and utilization gates.",
-      "source": "Founder YC pitch 02:12-02:47 describes owned-hardware model research and compute-focused financing. fleet-mesh/CLUSTER.md documents nine owned workers completing dated deterministic CPU-job receipts. This is not inference throughput or a large GPU fleet claim. Utilization gates are proposed investment discipline, not historical metrics.",
-      "cue": "The founder and operating model are part of the diligence here, so let me make that explicit.",
-      "background": "#F5F3EE",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "13",
-              "size": 16,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Owned compute supports the shared stack",
-              "size": 48,
-              "color": "#14202C",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 237,
-          "w": 1120,
-          "h": 65,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Capital builds a reusable operating asset",
-              "size": 37,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 329,
-          "w": 1120,
-          "h": 100,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Own the infrastructure for model research\nand controlled execution across our applications.",
-              "size": 32,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 64,
-          "y": 492,
-          "w": 530,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Current evidence",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 64,
-          "y": 550,
-          "w": 530,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Owned workers have completed\ndated deterministic CPU jobs.",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 708,
-          "y": 492,
-          "w": 500,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Next investment",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 708,
-          "y": 550,
-          "w": 500,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Expand capacity against measured\nworkloads and utilization gates.",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e9",
-          "name": "text-9",
-          "x": 64,
-          "y": 654,
-          "w": 1150,
-          "h": 36,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Hardware expansion and model research are planned investments, not established production throughput.",
-              "size": 15,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Separate current evidence from the proposed purchase. Say the diligence sentence out loud."
-    },
-    {
-      "id": "founder",
-      "type": "elements",
-      "chapter": "Business",
-      "duration": 12,
-      "title": "Founder-led execution",
-      "notes": "This is founder-led execution. I have built the systems, sold the work, and operated the early infrastructure, but that is not the same as a finished company. The repository review confirms that the named components exist; it does not prove sole authorship of every line, audited performance, or founder-independent delivery. The raise is partly about converting personal execution into a team, process, and product that can stand on its own.",
-      "source": "Founder identity and client-funded hardware/development: founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 00:00-00:10, 00:57-01:11, 02:12-02:23. Repository review confirms listed systems exist. Does not claim sole authorship of all code, unverified prior employment, or audited performance.",
-      "cue": "The ask is sized around turning this from founder-operated capability into a repeatable company.",
-      "background": "#F5F3EE",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#647482",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "14",
-              "size": 16,
-              "color": "#647482",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Founder-led execution",
-              "size": 48,
-              "color": "#14202C",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 241,
-          "w": 1120,
-          "h": 82,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Arthur Collé",
-              "size": 60,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 64,
-          "y": 353,
-          "w": 1130,
-          "h": 68,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Building the shared stack and the businesses on it",
-              "size": 34,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 64,
-          "y": 487,
-          "w": 350,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Client delivery",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 64,
-          "y": 545,
-          "w": 350,
-          "h": 85,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Paid work has funded\ninfrastructure development.",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 460,
-          "y": 487,
-          "w": 360,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Systems engineering",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 460,
-          "y": 545,
-          "w": 360,
-          "h": 85,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "A harness, tool layer, router\nand persistent graph engine.",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e9",
-          "name": "text-9",
-          "x": 856,
-          "y": 487,
-          "w": 360,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Applied development",
-              "size": 28,
-              "color": "#986630",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e10",
-          "name": "text-10",
-          "x": 856,
-          "y": 545,
-          "w": 360,
-          "h": 85,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "HEAT connects the stack\nto real operating workflows.",
-              "size": 25,
-              "color": "#14202C",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.6,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "Be direct about founder dependence and the transition the capital is meant to fund."
-    },
-    {
-      "id": "raise",
-      "type": "elements",
-      "chapter": "Raise and evidence",
-      "duration": 12,
-      "title": "Raising $6m to build autonomous organizations",
-      "notes": "We are raising $6 million. Roughly 80 percent, or $4.8 million, is planned for owned physical compute; the remaining $1.2 million is an implied planning bucket for product, delivery, evidence, people, and operating reserve. This is a proposed use of funds, not a costed budget, a valuation, or money already committed. The milestones are repeat paid deployments, measured operating economics, completed production admission, and an organization that can operate beyond the founder.",
-      "source": "Raise source: founder YC pitch https://www.youtube.com/watch?v=YUNJ2eLQWhw 02:33-02:47. $6m ask, roughly80% owned compute. Arithmetic:6m*80%=4.8m; remainder1.2m. No funds-raised or committed-investor claim. Milestones are proposed and do not have invented dates, revenue targets or valuation.",
-      "cue": "Let me close by separating what is implemented today from what the raise is intended to prove.",
-      "background": "#101B27",
-      "elements": [
-        {
-          "id": "e0",
-          "name": "text-0",
-          "x": 64,
-          "y": 32,
-          "w": 850,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "DISTRIBUTED SYSTEMS",
-              "size": 16,
-              "color": "#AFC5D9",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e1",
-          "name": "text-1",
-          "x": 1160,
-          "y": 32,
-          "w": 60,
-          "h": 30,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "15",
-              "size": 16,
-              "color": "#AFC5D9",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.16,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e2",
-          "name": "title-main",
-          "x": 64,
-          "y": 99,
-          "w": 1152,
-          "h": 130,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Raising $6m to build autonomous organizations",
-              "size": 48,
-              "color": "#F5F3EE",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.32,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e3",
-          "name": "text-3",
-          "x": 64,
-          "y": 245,
-          "w": 540,
-          "h": 115,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "~$4.8m",
-              "size": 80,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.48,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e4",
-          "name": "text-4",
-          "x": 68,
-          "y": 375,
-          "w": 560,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Implied owned-compute allocation",
-              "size": 29,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.64,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e5",
-          "name": "text-5",
-          "x": 725,
-          "y": 245,
-          "w": 480,
-          "h": 115,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "~$1.2m",
-              "size": 80,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.8,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e6",
-          "name": "text-6",
-          "x": 729,
-          "y": 375,
-          "w": 480,
-          "h": 80,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Implied remaining allocation",
-              "size": 29,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 0.96,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e7",
-          "name": "text-7",
-          "x": 68,
-          "y": 510,
-          "w": 250,
-          "h": 50,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Milestones",
-              "size": 29,
-              "color": "#D9B78B",
-              "bold": true,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.12,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e8",
-          "name": "text-8",
-          "x": 68,
-          "y": 568,
-          "w": 1130,
-          "h": 83,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Repeat paid deployments. Measure operating economics.\nComplete production admission and independent organization operation.",
-              "size": 27,
-              "color": "#F5F3EE",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.28,
-            "duration": 0.7
-          }
-        },
-        {
-          "id": "e9",
-          "name": "text-9",
-          "x": 64,
-          "y": 654,
-          "w": 1150,
-          "h": 36,
-          "anchor": "t",
-          "insets": [
-            0,
-            0,
-            0,
-            0
-          ],
-          "text": [
-            {
-              "text": "Proposed $6m raise with ~80% for owned compute. Implied allocation, not a costed budget.",
-              "size": 15,
-              "color": "#AFC5D9",
-              "bold": false,
-              "lineHeight": 1.18
-            }
-          ],
-          "enter": {
-            "mode": "rise",
-            "delay": 1.44,
-            "duration": 0.7
-          }
-        }
-      ],
-      "deliveryCue": "State the ask and allocation once. Then state what remains unproven."
-    },
-    {
       "id": "evidence",
       "type": "elements",
-      "chapter": "Raise and evidence",
+      "chapter": "Technical appendix",
       "duration": 12,
-      "title": "Evidence and current readiness",
+      "title": "Technical evidence and current status",
       "notes": "Let me close with the honest status. DSCO has governed tool execution and Chronicle receipts. Tool Management has discovery, schemas, execution, and workflows. Router and Chimera have dispatch and metering. GraphSub has graph, query, and persistence primitives. HEAT has ingestion, tools, realtime interfaces, and workflows. This is component evidence from an October 30 read-only review, not a fresh end-to-end production test: HEAT order placement is paused, organization-compiler production admission is incomplete, services revenue is not ARR, and Mainline is still in process. The raise is to turn these components into a repeatable, independently accepted business.",
       "source": "DSCO https://github.com/arthurcolle/dsco · Tools https://tools.distributed.systems · Router https://router.distributed.systems · GraphSub https://github.com/arthurcolle/graphsub · HEAT https://heat-mcp.distributed.systems/mcp",
       "cue": "Thank you. I would be happy to take questions.",
@@ -3653,7 +3087,7 @@
           ],
           "text": [
             {
-              "text": "Spinout process and organization prototypes",
+              "text": "Application development and organization prototypes",
               "size": 23,
               "color": "#14202C",
               "bold": false,
@@ -3835,7 +3269,7 @@
           ],
           "text": [
             {
-              "text": "Evidence reviewed October 30, 2026. Component inspection is not a fresh end-to-end production test.",
+              "text": "Component review: October 30. Product and research updates: November 8. Production validation remains ongoing.",
               "size": 15,
               "color": "#647482",
               "bold": false,
@@ -3855,37 +3289,50 @@
   "routes": {
     "investor": [
       "open",
-      "organization-layer",
-      "shared-stack",
-      "harness",
-      "authority",
-      "action-layer",
-      "intelligence-memory",
-      "heat",
-      "durable-organization",
-      "business-model",
-      "traction",
+      "fragmentation",
+      "backend",
       "customers",
-      "compute",
+      "business-model",
+      "harness",
+      "traction",
+      "heat",
+      "office",
+      "knowledge",
       "founder",
       "raise",
-      "evidence"
+      "close"
     ],
     "short": [
       "open",
-      "organization-layer",
-      "shared-stack",
-      "authority",
-      "heat",
-      "business-model",
+      "backend",
+      "customers",
       "traction",
-      "raise"
+      "heat",
+      "raise",
+      "close"
     ],
     "technical": [
       "shared-stack",
       "authority",
-      "action-layer",
-      "intelligence-memory",
+      "durable-organization",
+      "evidence"
+    ],
+    "full": [
+      "open",
+      "fragmentation",
+      "backend",
+      "customers",
+      "business-model",
+      "harness",
+      "traction",
+      "heat",
+      "office",
+      "knowledge",
+      "founder",
+      "raise",
+      "close",
+      "shared-stack",
+      "authority",
       "durable-organization",
       "evidence"
     ]
@@ -3895,5 +3342,6 @@
     "short": "Brief introduction",
     "technical": "Technical evidence"
   },
-  "data": {}
+  "data": {},
+  "updatedAt": "2026-11-09T02:25:59.321Z"
 }

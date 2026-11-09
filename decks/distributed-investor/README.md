@@ -1,6 +1,6 @@
 # Distributed Systems investor presentation
 
-A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Sixteen scenes connect the autonomous-organization vision to the actual DSCO harness, action layer, routing and memory components, the HEAT application, commercial approach and proposed financing.
+A source-backed investor story, authored as a flagship example of Distributed-Slides itself. Thirteen investor-story scenes connect the customer problem and paid deployment model to the actual DSCO execution surface, HEAT, the Office direction and proposed financing. Four technical appendix scenes preserve the architecture and implementation evidence. The deck uses the existing deterministic animation runtime.
 
 ## Run
 
@@ -28,7 +28,11 @@ Three bespoke SVG scenes progressively assemble the architecture, illustrate adm
 - Revenue is founder-reported services revenue from one client, not independently verified financials or ARR.
 - Financing is a proposed ask. Approximate allocations are arithmetic implications, not a costed budget or money raised.
 - HEAT is a research and operations application. Its documented order-placement schedules were paused at review. Autonomous live trading and investment returns are not claimed.
-- Mainline Protocol remains a spinout in process. Organization Compiler remains prototype architecture.
+- DSCO Office is founder-reported application forks with integration still in development.
+- The GraphSub/SecDB analogy is a roadmap direction, not completed scenario and temporal integration.
+- FragBench is an arXiv preprint; it lists Arthur as coauthor but does not assign individual contributions.
+- The November 8 HEAT copilot is a local snapshot implementation, not live account monitoring.
+- The $6m ask remains proposed. The 90% compute preference is a provisional founder target, not a validated procurement or operating budget.
 - No unsupported efficiency percentage, customer count, market size, GPU fleet, profitability or benchmark claim appears in this deck.
 
 This example does not publish itself or send investor email. Review the source and storyboard before external use.
